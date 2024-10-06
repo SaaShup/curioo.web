@@ -34,8 +34,10 @@
     }
     &-post{
       @extend .site-project-item;
+      padding-bottom: 150px;
       &-thumb{
         @extend .site-project-item-thumb;
+        padding-bottom: 150px;
       }
       &-content{
         @extend .site-project-item-content;
