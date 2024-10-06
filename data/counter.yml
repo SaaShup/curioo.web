@@ -1,14 +1,19 @@
 enable : true
 heading : "What about numbers ?"
+identifier: "what_about_number"
 counter_item: 
   - title: "Guides"
+    identifier: "Guides"
     number: "8"
 
   - title: "Explorers"
+    identifier: "Explorers"
     number: "100"
 
   - title: "Hunts"
+    identifier: "Hunts"
     number: "14"
 
-  - title: "Treasure"
+  - title: "Treasures"
+    identifier: "Treasures"
     number: "68"

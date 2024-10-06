@@ -53,7 +53,7 @@
         <div class="site-footer-widget">
           <h5 class="site-footer-widget-title">{{ .title }}</h5>
           <p class="site-footer-widget-description">
-            {{ .description | safeHTML }}
+            {{ or (T "footer_about_description") .description | safeHTML }}
           </p>
         </div>
       </div>
@@ -62,7 +62,9 @@
         <a href="#top" class="site-footer-widget-top">
           <img src="{{ "images/to-top.svg" | absURL }}" alt="back-to-top">
           <p>
-	    {{ .Site.Params.footer.back_to_top.description | safeHTML }}
+            {{ with .Site.Params.footer.back_to_top }}
+	            {{ or (T "footer_back_to_top") .description | safeHTML }}
+            {{ end }}
           </p>
         </a>
       </div>

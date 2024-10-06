@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title">
-            <h2>{{ .title }}</h2>
-            <p>{{ .subtitle }}</p>
+            <h2>{{ or (T "guides_best") .title.value }}</h2>
+            <p>{{ or (T "guides_subtitle") .subtitle.value }}</p>
           </div>
         </div>
         {{ range first 4 (where $.Site.RegularPages "Type" "portfolio") }}

@@ -2,7 +2,23 @@ baseURL       = "https://curioo.city"
 languageCode  = "en-us"
 title         = "curiOOcity"
 theme         = "curioocity"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= true
 summarylength = 25
+
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = 'en-en'
+    languageName = 'English'
+    weight = 0
+
+  [languages.fr]
+    contentDir = 'content/fr'
+    disabled = false
+    languageCode = 'fr-fr'
+    languageName = 'Francais'
+    weight = 1
 
 # Site Menus
 [menu]
@@ -16,6 +32,7 @@ summarylength = 25
     url     = "guide"
     weight  = 2
   [[menu.nav]]
+    identifier = "get_in_touch"
     name    = "Get in touch"
     url     = "contact"
     weight  = 3
@@ -62,29 +79,38 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "Walk, play and discover the world"
-    tagline               = "You explore, You guide"
+    background_image      = "/images/backgrounds/hero-background.jpg"
     primary_button        = "Explore"
     primary_button_url    = "explore"
     secondary_button      = "Guide"
     secondary_button_url  = "guide"
+    [params.banner.heading]
+    identifier = 'heading'
+    value               = "Walk, play and discover the world"
+    [params.banner.tagline]
+    identifier = 'tagline'
+    value               = "You explore, You guide"
 
   [params.blog]
     read_more             = "read more"
 
   [params.portfolio]
     enable    = true
-    title     = "OUR BEST GUIDES"
-    subtitle  = "Crafting Hunts and seeking to make the walks fun and unique."
-    #view_project = "view project"
+    view_project = "view project"
     more_works = "MORE WORKS"
     scroll_down = "scroll down"
+    [params.portfolio.title]
+    identifier  = "guides_best"
+    value       = "OUR BEST GUIDES"
+    [params.portfolio.subtitle]
+    identifier    = "guides_subtitle"
+    value       = "Crafting Hunts and seeking to make the walks fun and unique."
 
   [params.call_to_action]
     enable              = true
     background_image    = "images/backgrounds/cta-background.jpg"
     title               = "PLAY"
+    identifier          = "PLAY"
     primary_button      = "Android"
     primary_button_url  = "https://play.google.com/store/games?"
     secondary_button    = "Apple"
@@ -130,6 +156,8 @@ summarylength = 25
       # Footer Service
       [params.footer.service]
         title       = "About"
+        identifier = "footer_about_description"
         description = "Walk, play and discover the world"
       [params.footer.back_to_top]
+        identifier = "footer_back_to_top"
         description = "I want to <br> visit again"

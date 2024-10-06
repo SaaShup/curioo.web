@@ -27,7 +27,7 @@
             >
               <span class="btn-area">
                 <span data-text="{{ .Name }}">
-                  {{ .Name }}
+                  {{  or (T "get_in_touch") .Name }}
                 </span>
               </span>
             </a>
