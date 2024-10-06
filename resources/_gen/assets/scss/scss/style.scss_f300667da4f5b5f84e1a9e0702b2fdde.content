@@ -1,7 +1,7 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
-PROJECT:	CuriooCity HTML
+PROJECT:	Curio HTML
 VERSION:	1.0.0
 -------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Montserrat:300,400,500,600,700&display=swap");
@@ -82,7 +82,7 @@ h6 {
   border-radius: 40px; }
 
 .btn-primary {
-  background: #000000;
+  background: #EAA4A4;
   color: #fff; }
   .btn-primary:hover {
     background: #e07b7b; }

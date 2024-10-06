@@ -16,10 +16,19 @@
               </a>
             </li>
             <li>
-              <a href="{{ .secondary_button_url | absURL }}" class="btn btn-primary">
+              <a href="{{ .secondary_button_url | absURL }}" class="btn btn-secondary">
                 <span class="btn-area">
                   <span data-text="{{ .secondary_button }}">
                     {{ .secondary_button }}
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ .third_button_url | absURL }}" class="btn btn-secondary">
+                <span class="btn-area">
+                  <span data-text="{{ .third_button }}">
+                    {{ .third_button }}
                   </span>
                 </span>
               </a>

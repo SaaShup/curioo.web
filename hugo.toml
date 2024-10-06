@@ -41,16 +41,16 @@ summarylength = 25
     placeholder_first_name        = "First Name"
     placeholder_last_name         = "Last Name"
     placeholder_email             = "Email"
-    placeholder_project_type      = "Project Type"
-    placeholder_about_the_project = "About the Project"
+    placeholder_project_type      = "Question Type"
+    placeholder_about_the_project = "Describe your question"
     send_message                  = "Send Message"
 
     [[params.contactForm.projectType]]
       value = "gd"
-      title  = "Graphics Design"
+      title  = "Guide"
     [[params.contactForm.projectType]]
       value = "wd"
-      title  = "Web Design"
+      title  = "Explore"
   
   # Navbar Action Button
   [params.navAction]
@@ -84,11 +84,13 @@ summarylength = 25
   [params.call_to_action]
     enable              = true
     background_image    = "images/backgrounds/cta-background.jpg"
-    title               = "DOWNLOAD"
+    title               = "PLAY"
     primary_button      = "Android"
-    primary_button_url  = "contact"
+    primary_button_url  = "https://play.google.com/store/games?"
     secondary_button    = "Apple"
-    secondary_button_url = "portfolio"
+    secondary_button_url = "https://www.apple.com/fr/app-store/"
+    third_button      = "Web"
+    third_button_url  = "https://app.curioo.city"
 
   [params.footer]
     params.footer.qr_print = false
