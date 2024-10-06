@@ -29,6 +29,6 @@
   <link rel="icon" href="{{ .Site.Params.favicon_icon | absURL }}" type="image/x-icon" />
   <script type="text/javascript">
     var userLang = navigator.language || navigator.userLanguage; 
-    if (window.location.pathname !== "/" + userLang.slice(0, 2) + "/") window.location.replace("/" + userLang.slice(0, 2) + "/");
+    if (!['/en/','/fr/'].includes(window.location.pathname)) window.location.replace("/" + userLang.slice(0, 2) + "/");
     </script>
 </head>
