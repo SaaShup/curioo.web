@@ -9,14 +9,14 @@ summarylength = 25
 [languages]
   [languages.en]
     disabled = false
-    languageCode = 'en-en'
+    languageCode = 'en-En'
     languageName = 'English'
     weight = 0
 
   [languages.fr]
     contentDir = 'content/fr'
     disabled = false
-    languageCode = 'fr-fr'
+    languageCode = 'fr-Fr'
     languageName = 'Francais'
     weight = 1
 
@@ -41,8 +41,8 @@ summarylength = 25
 [params]
   logo = "images/logo.png"
   logo_footer = "images/logo-footer.png"
-  favicon_icon = "images/favicon.ico"
-  favicon_shortcut_icon = "images/favicon.png"
+  favicon_icon = "/images/favicon.png"
+  favicon_shortcut_icon = "/images/favicon.png"
   custom_stylesheets = []   # [ "scss/my_1.scss", "scss/my_2.scss" ]
   dateFormat = "26 FEB 1994"
   # Meta data
@@ -100,11 +100,11 @@ summarylength = 25
     more_works = "MORE WORKS"
     scroll_down = "scroll down"
     [params.portfolio.title]
-    identifier  = "guides_best"
-    value       = "OUR BEST GUIDES"
+      identifier  = "guides_best"
+      value       = "OUR BEST GUIDES"
     [params.portfolio.subtitle]
-    identifier    = "guides_subtitle"
-    value       = "Crafting Hunts and seeking to make the walks fun and unique."
+      identifier    = "guides_subtitle"
+      value       = "Crafting Hunts and seeking to make the walks fun and unique"
 
   [params.call_to_action]
     enable              = true
