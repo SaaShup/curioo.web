@@ -1,7 +1,7 @@
 baseURL       = "https://curioo.city"
 languageCode  = "en-us"
 title         = "curiOOcity"
-theme         = "roxo-hugo"
+theme         = "curioocity"
 summarylength = 25
 
 # Site Menus
