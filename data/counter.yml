@@ -1,0 +1,14 @@
+enable : true
+heading : "What about numbers ?"
+counter_item: 
+  - title: "Guides"
+    number: "8"
+
+  - title: "Explorers"
+    number: "100"
+
+  - title: "Hunts"
+    number: "14"
+
+  - title: "Treasure"
+    number: "68"
