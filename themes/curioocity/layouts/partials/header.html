@@ -23,7 +23,7 @@
           <li class="nav-item">
             <a
               class="nav-link btn btn-sm btn-primary btn-sm-rounded"
-              href="{{ .URL | absURL }}"
+              href="{{ .URL | absLangURL }}"
             >
               <span class="btn-area">
                 <span data-text="{{ .Name }}">
@@ -34,7 +34,7 @@
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | absURL }}"
+            <a class="nav-link" href="{{ .URL | absLangURL }}"
               >{{ .Name }}</a
             >
           </li>

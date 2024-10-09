@@ -35,7 +35,7 @@ summarylength = 25
   [[menu.nav]]
     identifier = "get_in_touch"
     name    = "Get in touch"
-    pageRef     = "contact"
+    url     = "contact"
     weight  = 3
 
 # Site Params
