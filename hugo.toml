@@ -80,7 +80,7 @@ summarylength = 25
   # Banner Section
   [params.banner]
     enable                = true
-    background_image      = "/images/backgrounds/hero-background.jpg"
+    background_image      = "/images/backgrounds/hero-background.svg"
     primary_button        = "Explore"
     primary_button_url    = "explore"
     secondary_button      = "Guide"
