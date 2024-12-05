@@ -1,0 +1,8 @@
+_link_language_title = 'Consult Curioo.city in English' # Not Used For example only
+_about = 'About'
+_social_media = 'Social Media'
+_sitemap = 'Sitemap'
+_contact_info = 'Contact Info'
+_about_text_footer = 'Explore, play and discover the world.'
+_about_copyrigth_footer = '© Copyright {{ .year }}. All Rights Reserved by <a href="https://saashup.com" class="link-light">SaasHup</a>.'
+_play = 'Play'

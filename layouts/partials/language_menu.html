@@ -1,0 +1,13 @@
+<div class="dropdown">
+  <button class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <i class="bi-translate"></i>
+  {{ .Language.LanguageName }}</button>
+  <ul class="dropdown-menu">
+    {{ $current := .Page.Lang }}
+    {{ range .Page.AllTranslations }}
+      {{ if not (eq $current .Lang) }}
+          <li><a href="{{ .RelPermalink }}" class="dropdown-item">{{ .Language.LanguageName }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>

@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row g-5">
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">{{ T "_contact_info" }}</h3>
+          <address>
+            <p>{{ .Site.Data.addresses.saashup.address }}<br />
+              {{ .Site.Data.addresses.saashup.zip_code }} {{ .Site.Data.addresses.saashup.city }}, {{
+              .Site.Data.addresses.saashup.country }}</p>
+
+            <a class="icon-link link-light" href="mailto:{{ .Site.Data.addresses.saashup.email }}"><i class="bi-envelope"></i> {{ .Site.Data.addresses.saashup.email }}</a><br />
+            <a class="icon-link link-light" href="tel:{{ .Site.Data.addresses.saashup.tel }}"><i class="bi-telephone"></i> {{ .Site.Data.addresses.saashup.tel }}</a>
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">{{ T "_sitemap" }}</h3>
+          {{ partial "language_menu.html" . }}
+          {{ partial "menu.html" (dict "menuID" "footer" "page" .) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">{{ T "_social_media" }}</h3>
+          <ul class="nav flex-column">
+          {{- range .Site.Data.social_media }}
+            <li class="nav-item"><a class="nav-link link-light px-0" href="{{ .url }}">{{ .name }}</a></li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">{{ T "_about" }}</h3>
+
+          <p>{{ T "_about_text_footer" }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="text-center mt-5">{{ T "_about_copyrigth_footer" (dict "year" now.Year ) | markdownify }}</p>
+</div>
