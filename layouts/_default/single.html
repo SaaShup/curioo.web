@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="container">
   <h2>{{ .Title }}</h2>
 
   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
@@ -6,4 +7,5 @@
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
 
   {{ .Content }}
+</div>
 {{ end }}
