@@ -12,6 +12,8 @@ slug = 'explorer'
 
 ## Règles du jeux explorateurs
 
+{{< figure src="/images/explorer_screenshot" title="Application mobile explorer Curioo.city. Affichage du radar." >}}
+
 Situation de départ :
 L’Explorateur choisit un Point sur la Carte (Univers) d’un Guide et commence à se déplacer vers le Point.
 L'Explorateur décide de se déplacer au Point qu’il sélectionne.
