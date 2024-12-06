@@ -18,7 +18,7 @@ body {
 }
 
 #hero {
-  background-image: url("/images/hero-background.svg");
+  /*background-image: url("/images/hero-background.svg");*/
   height: 90vh;
   background-size: cover;
   display: flex;
