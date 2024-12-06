@@ -18,7 +18,7 @@ body {
 }
 
 #hero {
-  /*background-image: url("/images/hero-background.svg");*/
+  background-image: url("/images/hero-background.png");
   height: 90vh;
   background-size: cover;
   display: flex;
@@ -46,7 +46,7 @@ footer, #counter, #best-guides, #play {
 }
 
 #play {
-  background-image: url("/images/cta-background.jpg");
+  background-image: url("/images/cta-background.png");
 }
 
 footer .card {
