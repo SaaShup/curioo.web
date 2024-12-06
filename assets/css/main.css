@@ -1,0 +1,66 @@
+body {
+  padding-top: 20px;
+}
+
+.navbar-brand {
+  display: block;
+  text-indent: -9999px;
+  background-image: url("/images/logo.png");
+  background-size: 78px 78px;
+  width: 78px;
+  height: 78px;
+  white-space: nowrap;
+}
+
+.navbar-brand a {
+  display: block;
+  height: 100%;
+}
+
+#hero {
+  background-image: url("/images/hero-background.png");
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 5em;
+  text-shadow: #f2f2f2 2px 2px 3px;
+}
+
+footer, #counter {
+  color: #fff;
+  background: #000;
+}
+
+#counter h2, #best-guides h2, #play h2 {
+  font-size: 3em;
+}
+
+footer, #counter, #best-guides, #play {
+  padding: 60px 0;
+}
+
+#play {
+  background-image: url("/images/cta-background.png");
+}
+
+footer .card {
+  color: #fff;
+  background: #000;
+}
+
+@media (min-width: 1400px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero h2 {
+    font-size: 5.4em;
+  }
+}
+
