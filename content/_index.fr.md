@@ -100,8 +100,8 @@ Createur de parcours pour faire des marches amusantes et uniques
 ## Joue { .text-uppercase .mb-5 }
 
 <ul class="nav nav-pills justify-content-center">
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://play.google.com/store/games?"><i class="bi-google-play"></i> Android</a></li>
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://www.apple.com/fr/app-store/"><i class="bi-apple"></i> IPhone</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://play.google.com/store/games?"><i class="bi-google-play"></i> Google Play</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://www.apple.com/fr/app-store/"><i class="bi-apple"></i> App Store</a></li>
     <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://app.curioo.city"><i class="bi-globe"></i> Web</a></li>
 </ul>
 
