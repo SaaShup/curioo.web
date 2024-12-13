@@ -9,24 +9,11 @@ slug = 'explorer'
   [menus.footer]
     weight = 1
 +++
-<style>
-  body {
-    margin: 20px; /* Crée une marge autour du contenu */
-    padding: 10px; /* Espace interne */
-    background-color: white;
-    color: black;
-    text-align: center;
-  }
-  .colored-margins {
-    margin: 0 50px; /* Marge horizontale */
-    background-color: #333; /* Couleur de fond des marges */
-    padding: 20px; /* Espace interne de la section */
-</style>
 
 ## Règles du jeux explorateurs
 
 
-{{< figure src="/images/unnamed.png" width=150xp title="Application mobile explorer Curioo.city. Afficher" >}}
+{{< figure src="/images/unnamed.png" width=150xp >}}
 
 # Rejoignez l'aventure avec **Curioo.city** ! 🎮🌍
 
