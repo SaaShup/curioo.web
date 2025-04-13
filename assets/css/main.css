@@ -45,8 +45,12 @@ footer, #counter, #best-guides, #play {
   padding: 60px 0;
 }
 
-#play {
-  background-image: url("/images/cta-background.png");
+.bestguide:hover {
+  opacity: 0.5;
+}
+
+.card.text-bg-dark:hover {
+  opacity: 0.5;
 }
 
 footer .card {

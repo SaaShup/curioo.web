@@ -2,6 +2,7 @@
 date = '2024-12-02T17:48:35+01:00'
 draft = false
 title = 'Guide'
+slug = 'guide'
 [menus]
   [menus.main]
     weight = 2
@@ -16,6 +17,7 @@ title = 'Guide'
 Your mission is to create exciting Circuits, attract Explorers to your area, and earn rewards through your creativity and dedication.
 
 ---
+<br>
 
 ### 🌟 **Starting Situation: Your Map**
 - **Game Space:**  
@@ -29,6 +31,7 @@ As a Guide, you place **Points** on your Map, representing hidden **Treasures**,
 - A Circuit must include **3 Points or more**.
 
 ---
+<br>
 
 ### 🛠️ **Building a Circuit: Walking Paths**
 1. **Credits for Your Circuits:**  
@@ -49,6 +52,7 @@ As a Guide, you place **Points** on your Map, representing hidden **Treasures**,
    - This ensures Explorers have a consistent experience when a Circuit is saved in their Quest Log.
 
 ---
+<br>
 
 ### 🎯 **Your Objectives:**
 - **Attract Explorers**: Create Circuits that draw in the largest number of players.  
@@ -57,6 +61,7 @@ As a Guide, you place **Points** on your Map, representing hidden **Treasures**,
 💡 **Encourage Explorers**: A **donation system** allows players to thank and support Guides for their creativity and effort.
 
 ---
+<br>
 
 ### 🏆 **Rewards for Guides:**
 1. **Rewards from Explorer Activity:**  
@@ -69,6 +74,7 @@ As a Guide, you place **Points** on your Map, representing hidden **Treasures**,
    - Earn trophies for every completed Circuit by Explorers, showcasing your success and dedication.
 
 ---
+<br>
 
 ### 💰 **Credits (CuriooCoins):**  
 - **What are Credits?**  
@@ -79,6 +85,7 @@ As a Guide, you place **Points** on your Map, representing hidden **Treasures**,
 - **Build Smart:** Manage your Credits wisely to create impactful Circuits!
 
 ---
+<br>
 
 ### 👑 **Leaderboard:**
 - Compete with other Guides in the **curioo.city Leaderboard.**  
@@ -87,6 +94,7 @@ As a Guide, you place **Points** on your Map, representing hidden **Treasures**,
   - Track how many Coins or rewards they’ve helped Explorers earn.
 
 ---
+<br>
 
 ### 🛍️ **Local Shopping on curioo.city:**  
 As a Guide, you can create your own **local shop**.  
@@ -97,6 +105,7 @@ As a Guide, you can create your own **local shop**.
   - Support local organizations like communities, town halls, or associations.
 
 ---
+<br>
 
 ### 🎒 **Ready to Become a Guide?**
 Start designing your Circuits, attract Explorers, and bring your area to life with exciting adventures.  
