@@ -9,11 +9,11 @@ draft = false
 
 ## Parcours, joue et découvre le monde
 
-Tu explores, tu guides.
+<br>Tu explores, tu guides.<br><br>
 
 <ul class="nav nav-pills justify-content-center">
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< ref "explore" >}}">Explorer</a></li>
-    <li class="nav-item nav-link"><a class="btn btn-light btn-lg" href="{{< ref "guide" >}}">Guider</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< ref "explore" >}}">🗺 Explorer</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< ref "guide" >}}">🌍 Guider</a></li>
 </ul>
 
 </div>
@@ -22,17 +22,30 @@ Tu explores, tu guides.
 <section id="counter">
 <div class="container">
 
-## Quelques Chiffres { .text-uppercase .mb-5 }
+## 🌟 Quelques Chiffres { .text-uppercase .mb-5 }
 
 <div class="row g-5">
+
+<div class="col">
+<div class="card text-bg-dark" onclick="window.open('guides/', '_self');">
+<div class="card-body">
+
+### 🌍 Guides { .card-title }
+
+14+
+{ .card-text .fs-1 .fw-bolder }
+
+</div></a>
+</div>
+</div>
 
 <div class="col">
 <div class="card text-bg-dark">
 <div class="card-body">
 
-### Guides { .card-title }
+### 🎒 Explorateurs { .card-title }
 
-8+
+100+
 { .card-text .fs-1 .fw-bolder }
 
 </div>
@@ -40,10 +53,10 @@ Tu explores, tu guides.
 </div>
 
 <div class="col">
-<div class="card text-bg-dark">
+<div class="card text-bg-dark" onclick="window.open('cards/', '_self');">
 <div class="card-body">
 
-### Explorateurs { .card-title }
+### 🎴 Cartes { .card-title }
 
 100+
 { .card-text .fs-1 .fw-bolder }
@@ -56,22 +69,9 @@ Tu explores, tu guides.
 <div class="card text-bg-dark">
 <div class="card-body">
 
-### Parcours { .card-title }
+### 🕋 Trésors { .card-title }
 
-14+
-{ .card-text .fs-1 .fw-bolder }
-
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card text-bg-dark">
-<div class="card-body">
-
-### Trésors { .card-title }
-
-68+
+86+
 { .card-text .fs-1 .fw-bolder }
 
 </div>
@@ -86,23 +86,35 @@ Tu explores, tu guides.
 <section id="best-guides">
 <div class="container">
 
-## Nos Meilleurs Guides  { .text-uppercase .mb-5 }
+## 👑 Nos Meilleurs Guides  { .text-uppercase .mb-5 }
 
 Createur de parcours pour faire des marches amusantes et uniques
 { .text-secondary }
 
+<div class="row">
+    <div class="col-4 bestguide" onclick="window.open('https://www.nancy.fr');">
+        {{< figure src="/images/guides/Nancy.png" width=100% >}}
+        <div align="center"><h3><b>NANCY</b></h3></div>
+    </div>
+    <div class="col-4 bestguide" onclick="window.open('https://www.parc-merveilleux.lu/');">
+        {{< figure src="/images/guides/Bettembourg.png" width=100% >}}
+        <div align="center"><h3><b>PARC BETTEMBOURG</b></h3></div>
+    </div>
+    <div class="col-4 bestguide" onclick="window.open('https://metz.fr');">
+        {{< figure src="/images/guides/Metz.png" width=100% >}}
+        <div align="center"><h3><b>METZ</b></h3></div>
+    </div>
 </div>
 </section>
 
 <section id="play">
 <div class="container">
 
-## Joue { .text-uppercase .mb-5 }
+## 🎮 TELECHARGE ET JOUE { .text-uppercase .mb-5 }
 
 <ul class="nav nav-pills justify-content-center">
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://play.google.com/store/games?"><i class="bi-google-play"></i> Google Play</a></li>
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://www.apple.com/fr/app-store/"><i class="bi-apple"></i> App Store</a></li>
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://app.curioo.city"><i class="bi-globe"></i> Web</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-danger btn-lg" href="https://play.google.com/apps/internaltest/4701644180561663757"><i class="bi-google-play"></i> Google Play</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-primary btn-lg" href="https://www.apple.com/fr/app-store/"><i class="bi-apple"></i> App Store</a></li>
 </ul>
 
 </div>

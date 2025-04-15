@@ -12,14 +12,11 @@ slug = 'explorer'
 
 ## Règles du jeux explorateurs
 
-
-{{< figure src="/images/unnamed.png" width=150xp >}}
-
 # Rejoignez l'aventure avec **Curioo.city** ! 🎮🌍
 
 ## Bienvenue Explorateur ! 🌟  
 Votre mission, si vous l'acceptez, est simple :  
-**Partez à la découverte des trésors cachés de curioo.city, complétez des circuits palpitants, et remportez des récompenses incroyables.**
+**Partez à la découverte des trésors cachés de curioo.city, complétez des circuits palpitants, et collections des récompenses incroyables.**
 
 ---
 
@@ -29,7 +26,7 @@ Votre mission, si vous l'acceptez, est simple :
    <span style="color:#f39c12;">🌟 Conseil : Prenez un itinéraire stratégique pour maximiser vos gains !</span>
    
 2. **Explorez et découvrez :**  
-   Une fois arrivé au Point, ouvrez le **Trésor** qui vous attend et collectez vos **Jetons** !  
+   Une fois arrivé au Point, ouvrez le **Trésor** qui vous attend et collectez votre **Carte** !  
    Chaque trésor est unique et ne peut être découvert qu’une seule fois.
 
 3. **Continuez votre progression :**  
@@ -44,18 +41,19 @@ Votre mission, si vous l'acceptez, est simple :
 ### 🎯 **Votre objectif :**
 - **Amusez-vous** à explorer des lieux fascinants et divertissants.  
 - **Terminez les Circuits** pour débloquer des récompenses exclusives.  
-- **Gagnez des Jetons** et ouvrez des coffres en chemin pour enrichir votre portefeuille virtuel.
+- **Gagnez des Cartes** et ouvrez des coffres en chemin pour enrichir votre album virtuel.
 
 ---
 
 ### 🏆 **Vos récompenses :**
-✨ **Jetons (Crédits) :**  
-Utilisez-les pour acheter des objets uniques dans le jeu ou les dépenser dans la boutique locale du Guide.
+🐾 **Jetons (Crédits) :**  
+Utilisez-les pour acheter des objets uniques dans le jeu, les dépenser dans la boutique locale du Guide ou faire evoluer vos cartes.
 
-✨ **Coffres :**  
-À chaque découverte, ouvrez des trésors qui réservent des **surprises uniques** !
+🕋 **Coffres :**  
+À chaque découverte, ouvrez des trésors qui réservent des **cartes exceptionnels** 🎴 !
 
-💡 **Astuce :** Vous pouvez **refaire un Circuit** autant de fois que vous le souhaitez ! Même si les Crédits diminuent légèrement, certains Points attribueront des **Crédits bonus de façon aléatoire**.  
+💡 **Astuce :** Vous pouvez **refaire un Circuit** autant de fois que vous le souhaitez ! Même si les Crédits diminuent légèrement, certains Points attribueront des **Cartes bonus de façon aléatoire**.  
+
 Qui sait, la chance vous sourira peut-être ?
 
 ---
@@ -64,6 +62,7 @@ Qui sait, la chance vous sourira peut-être ?
 Rejoignez le **Classement des Explorateurs** et mesurez-vous aux autres joueurs :  
 - Consultez votre position dans le classement.  
 - Visualisez les types de Circuits que vous avez complétés.  
+- Collectionnez les cartes
 - Comptez vos Jetons accumulés.
 
 ---
@@ -78,3 +77,4 @@ Terminez un Circuit et accédez à la **boutique du Guide local** :
 ### 🎒 **Prêt à partir à l’aventure ?**
 Choisissez votre **premier Point sur la carte** et découvrez tout ce que **curioo.city** a à offrir.  
 Les trésors n’attendent que vous ! 🚀
+<br><br>
