@@ -2,7 +2,8 @@
 title = 'CuriOO.city — Explore, find, fun'
 +++
 
-<div class="row" class="mt-5">
+<div class="container mt-3">
+<div class="row">
     <div class="col-3 mt-3">
         <select class="form-select" name="country" id="country-select">
             <option value="fr">France</option>
@@ -38,11 +39,11 @@ title = 'CuriOO.city — Explore, find, fun'
 </div>
 
 <script>
-    let row = '<div class="row">';
+    let row = '<div class="row mt-3 mb-5">';
     for (i = 1 ; i < 25 ; i++) {
         row += '<div class="col-3"><img src="/images/cards/' + i + '-min.png" width="100%" style="padding-top: 25px;" /></div>';
     }
     row += '</div>';
     document.write(row);
 </script>
-<br><br>
+</div>
