@@ -10,6 +10,8 @@ slug = 'explore'
     weight = 1
 +++
 
+<div class="container">
+
 ## Explorer Rules
 
 # Join the Adventure with **Curioo.city**! 🎮🌍
@@ -76,3 +78,5 @@ Finish a Circuit to access the **local Guide's shop**:
 ### 🎒 **Ready to Embark on the Adventure?**
 Choose your **first Point on the map** and uncover all that **curioo.city** has to offer.  
 The treasures are waiting for you! 🚀
+
+</div>

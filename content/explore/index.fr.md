@@ -10,6 +10,8 @@ slug = 'explorer'
     weight = 1
 +++
 
+<div class="container">
+
 ## Règles du jeux explorateurs
 
 # Rejoignez l'aventure avec **Curioo.city** ! 🎮🌍
@@ -77,4 +79,5 @@ Terminez un Circuit et accédez à la **boutique du Guide local** :
 ### 🎒 **Prêt à partir à l’aventure ?**
 Choisissez votre **premier Point sur la carte** et découvrez tout ce que **curioo.city** a à offrir.  
 Les trésors n’attendent que vous ! 🚀
-<br><br>
+
+</div>

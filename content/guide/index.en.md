@@ -10,6 +10,8 @@ slug = 'guide'
     weight = 2
 +++
 
+<div class="container">
+
 ## Guides Rules
 # Become a Guide on **Curioo.city**! 🌍✨
 
@@ -110,3 +112,5 @@ As a Guide, you can create your own **local shop**.
 ### 🎒 **Ready to Become a Guide?**
 Start designing your Circuits, attract Explorers, and bring your area to life with exciting adventures.  
 Your creativity will make **curioo.city** unforgettable! 🚀
+
+</div>

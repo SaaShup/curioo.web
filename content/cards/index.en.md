@@ -53,39 +53,39 @@ title = 'CuriOO.city — Explore, find, fun'
 <div class="container">
 <div class="row mx-5">
     <div class="col mt-3">
-        <label class="text-white fw-bold mb-3">🗺 Pays: </label>
+        <label class="text-white fw-bold mb-3">🗺 Country: </label>
         <select class="form-select" name="country" id="country-select">
             <option value="fr">France</option>
         </select>
     </div>
-    <div class="col mt-3">
-        <label class="text-white fw-bold mb-3">📅 Annee: </label>
+    <div class="col-3 mt-3">
+        <label class="text-white fw-bold mb-3">📅 Year: </label>
         <select class="form-select" name="year" id="year-select">
             <option value="2025">2025</option>
         </select>
     </div>
-    <div class="col mt-3">
+    <div class="col-3 mt-3">
         <label class="text-white fw-bold mb-3">🧾 Type: </label>
         <select class="form-select" name="type" id="type-select">
             <option value="0">---</option>
             <option value="1">Nature</option>
             <option value="2">Monument</option>
             <option value="3">Culte</option>
-            <option value="4">Evenement</option>
-            <option value="5">Lieu</option>
+            <option value="4">Event</option>
+            <option value="5">Location</option>
         </select>
     </div>
-    <div class="col mt-3">
-        <label class="text-white fw-bold mb-3">🏷 Categorie: </label>
+    <div class="col-3 mt-3">
+        <label class="text-white fw-bold mb-3">🏷 Category: </label>
         <select class="form-select" name="category" id="category-select">
             <option value="0">---</option>
             <option value="1">Place</option>
-            <option value="2">Mont</option>
-            <option value="3">Chateau</option>           
-            <option value="4">Plage</option> 
-            <option value="5">Foret</option> 
-            <option value="6">Musee</option>
-            <option value="7">Parc</option>
+            <option value="2">Mountain</option>
+            <option value="3">Castle</option>           
+            <option value="4">Beach</option> 
+            <option value="5">Forest</option> 
+            <option value="6">Museum</option>
+            <option value="7">Park</option>
         </select>
     </div>
 </div>
