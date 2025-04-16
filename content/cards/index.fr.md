@@ -6,19 +6,19 @@ title = 'CuriOO.city — Explore, find, fun'
 <div class="container">
 <div class="row mx-5">
     <div class="col mt-3">
-        <label class="text-white fw-bold mb-3">🗺 Pays: </label>
+        <label class="text-white fw-bold mb-3 h4">🗺 Pays: </label>
         <select class="form-select" name="country" id="country-select">
             <option value="fr">France</option>
         </select>
     </div>
     <div class="col mt-3">
-        <label class="text-white fw-bold mb-3">📅 Annee: </label>
+        <label class="text-white fw-bold mb-3 h4">📅 Annee: </label>
         <select class="form-select" name="year" id="year-select">
             <option value="2025">2025</option>
         </select>
     </div>
     <div class="col mt-3">
-        <label class="text-white fw-bold mb-3">🧾 Type: </label>
+        <label class="text-white fw-bold mb-3 h4">🧾 Type: </label>
         <select class="form-select" name="type" id="type-select">
             <option value="0">---</option>
             <option value="1">Nature</option>
@@ -29,7 +29,7 @@ title = 'CuriOO.city — Explore, find, fun'
         </select>
     </div>
     <div class="col mt-3">
-        <label class="text-white fw-bold mb-3">🏷 Categorie: </label>
+        <label class="text-white fw-bold mb-3 h4">🏷 Categorie: </label>
         <select class="form-select" name="category" id="category-select">
             <option value="0">---</option>
             <option value="1">Place</option>
