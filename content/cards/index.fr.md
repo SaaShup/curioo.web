@@ -1,22 +1,19 @@
 +++
 title = 'CuriOO.city — Explore, find, fun'
-date = 2023-01-01T08:00:00-07:00
-draft = false
 +++
 
-<br><br><br><br>
-<div class="row">
-    <div class="col-3">
+<div class="row" class="mt-5">
+    <div class="col-3 mt-3">
         <select class="form-select" name="country" id="country-select">
             <option value="fr">France</option>
         </select>
     </div>
-    <div class="col-3">
+    <div class="col-3 mt-3">
         <select class="form-select" name="year" id="year-select">
             <option value="2025">2025</option>
         </select>
     </div>
-    <div class="col-3">
+    <div class="col-3 mt-3">
         <select class="form-select" name="type" id="type-select">
             <option value="0">---</option>
             <option value="1">Nature</option>
@@ -26,7 +23,7 @@ draft = false
             <option value="5">Lieu</option>
         </select>
     </div>
-    <div class="col-3">
+    <div class="col-3 mt-3">
         <select class="form-select" name="category" id="category-select">
             <option value="0">---</option>
             <option value="1">Place</option>
