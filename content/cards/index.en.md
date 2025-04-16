@@ -3,7 +3,7 @@ title = 'CuriOO.city — Explore, find, fun'
 +++
 
 <div class="row" class="mt-5">
-    <div class="col-3 mt-3">
+    <div class="col -3 mt-3">
         <select class="form-select" name="country" id="country-select">
             <option value="fr">France</option>
         </select>

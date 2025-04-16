@@ -10,6 +10,8 @@ slug = 'guide'
     weight = 2
 +++
 
+<div class="container">
+
 ## Règle du jeux guides
 # Devenez Guide sur **Curioo.city** ! 🌍✨
 
@@ -125,4 +127,5 @@ En tant que Guide, vous pouvez créer votre propre **boutique locale**.
 
 Commencez à concevoir vos Circuits, attirez des Explorateurs et donnez vie à votre région avec des aventures passionnantes.  
 Votre créativité rendra **curioo.city** inoubliable ! 🚀
-<br><br>
+
+</div>
