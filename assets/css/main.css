@@ -17,6 +17,12 @@ body {
   height: 100%;
 }
 
+.navbar-nav .active {
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid #000; 
+}
+
 #hero {
   background-image: url("/images/hero-background.png");
   height: 90vh;

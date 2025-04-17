@@ -33,7 +33,9 @@
           <h3 class="card-title">{{ T "_social_media" }}</h3>
           <ul class="nav flex-column">
           {{- range .Site.Data.social_media }}
-            <li class="nav-item"><a class="nav-link link-light px-0" href="{{ .url }}">{{ .name }}</a></li>
+            <li class="nav-item"><a class="nav-link link-light px-0" href="{{ .url }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="{{ .logo }}"/>
+            </svg>  {{ .name }}</a></li>
           {{ end }}
           </ul>
         </div>
