@@ -2,22 +2,22 @@
 title = 'CuriOO.city — Explore, find, fun'
 +++
 
-<div class="row" style="background-color: black;padding:50px;">
+<div class="row" style="background-color: black;padding:50px;margin: 0px;">
 <div class="container">
 <div class="row mx-5">
-    <div class="col mt-3">
+    <div class="col-lg-3 col-md-6 col-xs-12 mt-3">
         <label class="text-white fw-bold mb-3 h4">🗺 Pays: </label>
         <select class="form-select" name="country" id="country-select">
             <option value="fr">France</option>
         </select>
     </div>
-    <div class="col mt-3">
-        <label class="text-white fw-bold mb-3 h4">📅 Annee: </label>
+    <div class="col-lg-3 col-md-6 col-xs-12 mt-3">
+        <label class="text-white fw-bold mb-3 h4">📅 Edition: </label>
         <select class="form-select" name="year" id="year-select">
             <option value="2025">2025</option>
         </select>
     </div>
-    <div class="col mt-3">
+    <div class="col-lg-3 col-md-6 col-xs-12 mt-3">
         <label class="text-white fw-bold mb-3 h4">🧾 Type: </label>
         <select class="form-select" name="type" id="type-select">
             <option value="0">---</option>
@@ -28,7 +28,7 @@ title = 'CuriOO.city — Explore, find, fun'
             <option value="5">Lieu</option>
         </select>
     </div>
-    <div class="col mt-3">
+    <div class="col-lg-3 col-md-6 col-xs-12 mt-3">
         <label class="text-white fw-bold mb-3 h4">🏷 Categorie: </label>
         <select class="form-select" name="category" id="category-select">
             <option value="0">---</option>
