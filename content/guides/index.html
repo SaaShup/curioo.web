@@ -21,7 +21,8 @@
             for (city in cities) {
                 var marker = L.marker([cities[city].latitude, cities[city].longitude], {
                 });
-                marker.bindPopup(cities[city].name);
+                let url = cities[city].url.substring(0, cities[city].url.indexOf('/api/'));
+                marker.bindPopup('<div class="text-center"><a href="' + url + '" target="_blank" style="color:black;text-decoration: none;"><div class="fw-bold m-2">' + cities[city].name + '</div><div><img class="rounded" width="96px" height="96px" src="' + url + '/api/image"/></div></a></div>');
                 markerClusters.addLayer(marker);
             }
             macarte.addLayer(markerClusters);
