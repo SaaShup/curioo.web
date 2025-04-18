@@ -54,7 +54,7 @@ var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("modal-image");
 
     let row = '<div class="container mt-3 mb-5"><div class="row">';
-    for (i = 1 ; i < 37 ; i++) {
+    for (i = 1 ; i < 49 ; i++) {
         row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + i + '" src="/images/cards/' + i + '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
     }
     row += '</div></div>';
