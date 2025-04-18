@@ -28,7 +28,7 @@ Votre mission, si vous l'acceptez, est simple :
    <span style="color:#f39c12;">🌟 Conseil : Prenez un itinéraire stratégique pour maximiser vos gains !</span>
    
 2. **Explorez et découvrez :**  
-   Une fois arrivé au Point, ouvrez le **Trésor** qui vous attend et collectez votre **Carte** !  
+   Une fois arrivé au Point, ouvrez le 🕋 **Trésor** qui vous attend et collectez votre 🎴 **Carte** !  
    Chaque trésor est unique et ne peut être découvert qu’une seule fois.
 
 3. **Continuez votre progression :**  
@@ -36,7 +36,11 @@ Votre mission, si vous l'acceptez, est simple :
 
 4. **Terminez le Circuit :**  
    Lorsque vous atteignez le **dernier Point**, découvrez le **Trésor final** et recevez la **Récompense du Circuit**.  
-   Plus le Circuit est chargé en Crédits, plus vos gains seront généreux ! 🎁
+   Plus le Circuit est chargé en coffres, plus vos gains seront généreux ! 🎁
+
+   <span style="color:#f39c12;">💡 Astuce : Vous pouvez **refaire un Circuit** autant de fois que vous le souhaitez !</span>  
+   Même si les Récompenses diminuent légèrement, certains coffres attribueront des **Cartes bonus de façon aléatoire**.  
+   Qui sait, la chance vous sourira peut-être ?
 
 ---
 
@@ -48,15 +52,83 @@ Votre mission, si vous l'acceptez, est simple :
 ---
 
 ### 🏆 **Vos récompenses :**
-🐾 **Jetons (Crédits) :**  
+- 🐾 **Jetons (Crédits) :**  
 Utilisez-les pour acheter des objets uniques dans le jeu, les dépenser dans la boutique locale du Guide ou faire evoluer vos cartes.
 
-🕋 **Coffres :**  
+- 🕋 **Coffres :**  
 À chaque découverte, ouvrez des trésors qui réservent des **cartes exceptionnels** 🎴 !
 
-💡 **Astuce :** Vous pouvez **refaire un Circuit** autant de fois que vous le souhaitez ! Même si les Crédits diminuent légèrement, certains Points attribueront des **Cartes bonus de façon aléatoire**.  
+- 🕋 **Cartes :**  
+**Collectionnez** les 🎴 !  Il existe plusieurs **type** de cartes :
 
-Qui sait, la chance vous sourira peut-être ?
+<div class="row mb-3 mx-2">
+   <div class="col-6 p-1">
+      <img src="/images/cards/1-min.png" width="32px"/> <span style="font-weight: bold;color:#942222;">Monument</span>
+   </div>
+   <div class="col-6 p-1">
+      <img src="/images/cards/2-min.png" width="32px"/> <span style="font-weight: bold;color:#4F7942;">Nature</span>
+   </div>
+   <div class="col-6 p-1">
+      <img src="/images/cards/4-min.png" width="32px"/> <span style="font-weight: bold;color:#0F52BA;">Lieu</span>
+   </div>
+   <div class="col-6 p-1">
+      <img src="/images/cards/6-min.png" width="32px"/> <span style="font-weight: bold;color:grey">Culte</span>
+   </div>
+   <div class="col-6 p-1">
+      <img src="/images/cards/22-min.png" width="32px"/> <span style="font-weight: bold;color:purple">Evenement</span>
+   </div>
+</div> 
+
+Ainsi que plusieurs **categories** :
+
+<div class="row mb-3 mx-2">
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-basilique.png" width="32px"/> Basilique
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-batiment.png" width="32px"/> Batiment
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-cathedrale.png" width="32px"/> Cathedrale
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-chateau.png" width="32px"/> Chateau
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-grotte.png" width="32px"/> Grotte
+   </div>
+      <div class="col-4 p-1">
+      <img src="/images/badges/badge-histoire.png" width="32px"/> Histoire
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-mont.png" width="32px"/> Mont
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-museum.png" width="32px"/> Musee
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-parc.png" width="32px"/> Parc
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-place.png" width="32px"/> Place
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-plage.png" width="32px"/> Plage
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-pont.png" width="32px"/> Pont
+   </div>
+      <div class="col-4 p-1">
+      <img src="/images/badges/badge-porte.png" width="32px"/> Porte
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/badges/badge-statue.png" width="32px"/> Statue
+   </div>
+</div>
+
+Elle permettent aussi d’accomplir des 📜 **quetes** qui vont permettre d’obtenir des **récompenses**.  
+
+- 📜 **Quetes :** 
 
 ---
 
