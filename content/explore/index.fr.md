@@ -34,14 +34,19 @@ Votre mission, si vous l'acceptez, est simple :
 3. **Continuez votre progression :**  
    Le **prochain Point** de votre Circuit sera automatiquement proposé. À chaque étape, vous vous rapprochez d'une **récompense encore plus grande.**
 
-4. **Terminez le Circuit :**  
-   Lorsque vous atteignez le **dernier Point**, découvrez le **Trésor final** et recevez la **Récompense du Circuit**.  
+<div class="row">
+   <div class="col text-center py-3"><img class="rounded" src="/images/1stCCimage.png" width="320px" height="256px"/></div>
+   <div class="col pt-3">
+   <div class="mb-3">
+   <div>4. <b>Terminez le Circuit :</b></div>
+   Lorsque vous atteignez le <b>dernier Point</b>, découvrez le <b>Trésor final</b> et recevez la <b>Récompense du Circuit</b>.  
    Plus le Circuit est chargé en coffres, plus vos gains seront généreux ! 🎁
-
-   <span style="color:#f39c12;">💡 Astuce : Vous pouvez **refaire un Circuit** autant de fois que vous le souhaitez !</span>  
-   Même si les Récompenses diminuent légèrement, certains coffres attribueront des **Cartes bonus de façon aléatoire**.  
+   </div>
+   <span style="color:#f39c12;">💡 Astuce : Vous pouvez <b>refaire un Circuit</b> autant de fois que vous le souhaitez !</span>  
+   Même si les Récompenses diminuent légèrement, certains coffres attribueront des <b>Cartes bonus de façon aléatoire</b>.  
    Qui sait, la chance vous sourira peut-être ?
-
+   </div>
+</div>
 ---
 
 ### 🎯 **Votre objectif :**
@@ -63,19 +68,19 @@ Utilisez-les pour acheter des objets uniques dans le jeu, les dépenser dans la 
 
 <div class="row mb-3 mx-2">
    <div class="col-6 p-1">
-      <img src="/images/cards/1-min.png" width="32px"/> <span style="font-weight: bold;color:#942222;">Monument</span>
+      <img src="/images/cards/2025/1-min.png" width="32px"/> <span style="font-weight: bold;color:#942222;">Monument</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2-min.png" width="32px"/> <span style="font-weight: bold;color:#4F7942;">Nature</span>
+      <img src="/images/cards/2025/2-min.png" width="32px"/> <span style="font-weight: bold;color:#4F7942;">Nature</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/4-min.png" width="32px"/> <span style="font-weight: bold;color:#0F52BA;">Lieu</span>
+      <img src="/images/cards/2025/4-min.png" width="32px"/> <span style="font-weight: bold;color:#0F52BA;">Lieu</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/6-min.png" width="32px"/> <span style="font-weight: bold;color:grey">Culte</span>
+      <img src="/images/cards/2025/6-min.png" width="32px"/> <span style="font-weight: bold;color:grey">Culte</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/22-min.png" width="32px"/> <span style="font-weight: bold;color:purple">Evenement</span>
+      <img src="/images/cards/2025/22-min.png" width="32px"/> <span style="font-weight: bold;color:purple">Evenement</span>
    </div>
 </div> 
 
@@ -129,6 +134,26 @@ Ainsi que plusieurs **categories** :
 Elle permettent aussi d’accomplir des 📜 **quetes** qui vont permettre d’obtenir des **récompenses**.  
 
 - 📜 **Quetes :** 
+
+Il existe une multitude de 📜 **quetes** a accomplir.
+Certaines sont simples, d'autre moins. 
+Par exemple il y a des quetes pour ouvrir des 🕋 coffres, parcourrir des distances, recuperer certains types de cartes 🎴.
+
+La 📜 **quetes** la plus importante est **d'evoluer** 🔀 ses 🎴 cartes. Lorsque l'on possede une carte et que l'on se trouve a sa position il est alors possible de la 🔀 **transformer**.
+
+<span style="color:#f39c12;">💡 Exemple : Vous avez la carte Tour Eiffel et vous etes devant</span> 
+
+<div class="row mb-3 mx-2 text-center">
+   <div class="col-4 p-1">
+      <img src="/images/cards/2025/1-min.png" width="96px"/>
+   </div>
+   <div class="col-4 p-1">
+   <span style="font-size:5rem;width:100%;text-align:center;">🔀</span>
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/cards/2025/1-min-gold.png" width="96px"/>
+   </div>
+</div>
 
 ---
 
