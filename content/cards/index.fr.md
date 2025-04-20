@@ -16,6 +16,7 @@ title = 'CuriOO.city — Explore, find, fun'
         <select class="form-select" name="year" id="edition-select"  onchange="loadCards();">
             <option value="2025">2025</option>
             <option value="ennery">Ennery</option>
+            <option value="nancy">Nancy</option>
         </select>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
