@@ -18,28 +18,28 @@ slug = 'explorer'
 
 ## Bienvenue Explorateur ! 🌟  
 Votre mission, si vous l'acceptez, est simple :  
-**Partez à la découverte des trésors cachés de curioo.city, complétez des circuits palpitants, et collections des récompenses incroyables.**
+**Partez à la découverte des trésors cachés de curioo.city, complétez des circuits palpitants, et collectionnez des récompenses incroyables.**
 
 ---
 
 ### 🚀 **Votre aventure commence ici :**
 1. **Choisissez votre point de départ :**  
-   Sélectionnez un **Point sur la Carte d’un Guide** et commencez à vous déplacer vers celui-ci.  
+   Sélectionnez un **Coffre dans le monde d’un Guide** et commencez à vous déplacer vers celui-ci.  
    <span style="color:#f39c12;">🌟 Conseil : Prenez un itinéraire stratégique pour maximiser vos gains !</span>
    
 2. **Explorez et découvrez :**  
-   Une fois arrivé au Point, ouvrez le 🕋 **Trésor** qui vous attend et collectez votre 🎴 **Carte** !  
-   Chaque trésor est unique et ne peut être découvert qu’une seule fois.
+   Une fois arrivé au coffre, ouvrez le 🕋 **Trésor** qui vous attend et collectez votre 🎴 **Carte** !  
+   Chaque trésor n'est ouvrable qu'une seule fois par mois, alors **prenez vos baksets** et **baladez-vous** pour en découvrir un maximum. 
 
 3. **Continuez votre progression :**  
-   Le **prochain Point** de votre Circuit sera automatiquement proposé. À chaque étape, vous vous rapprochez d'une **récompense encore plus grande.**
+   Le **prochain coffre** de votre Circuit sera automatiquement proposé. À chaque étape, de nouvelles cartes sont à découvrir pour enrichir votre **collection.**
 
 <div class="row">
    <div class="col text-center py-3"><img class="rounded" src="/images/1stCCimage.png" width="320px" height="256px"/></div>
    <div class="col pt-3">
    <div class="mb-3">
    <div>4. <b>Terminez le Circuit :</b></div>
-   Lorsque vous atteignez le <b>dernier Point</b>, découvrez le <b>Trésor final</b> et recevez la <b>Récompense du Circuit</b>.  
+   Lorsque vous atteignez le <b>dernier Coffre</b>, découvrez le <b>Coffre final</b> et recevez la <b>Récompense du Circuit</b>.  
    Plus le Circuit est chargé en coffres, plus vos gains seront généreux ! 🎁
    </div>
    <span style="color:#f39c12;">💡 Astuce : Vous pouvez <b>refaire un Circuit</b> autant de fois que vous le souhaitez !</span>  
@@ -52,16 +52,13 @@ Votre mission, si vous l'acceptez, est simple :
 ### 🎯 **Votre objectif :**
 - **Amusez-vous** à explorer des lieux fascinants et divertissants.  
 - **Terminez les Circuits** pour débloquer des récompenses exclusives.  
-- **Gagnez des Cartes** et ouvrez des coffres en chemin pour enrichir votre album virtuel.
+- **Gagnez des Cartes** et **ouvrez des coffres** en chemin pour enrichir votre album virtuel.
 
 ---
 
 ### 🏆 **Vos récompenses :**
-- 🐾 **Jetons (Crédits) :**  
-Utilisez-les pour acheter des objets uniques dans le jeu, les dépenser dans la boutique locale du Guide ou faire evoluer vos cartes.
-
 - 🕋 **Coffres :**  
-À chaque découverte, ouvrez des trésors qui réservent des **cartes exceptionnels** 🎴 !
+À chaque découverte, ouvrez des trésors qui réservent des **cartes exceptionnelles** 🎴 ! Soyez attentif aux coordonnées présentes sur la carte, elles pourraient vous permettre d'améliorer votre collection !
 
 - 🕋 **Cartes :**  
 **Collectionnez** les 🎴 !  Il existe plusieurs **type** de cartes :
@@ -84,7 +81,7 @@ Utilisez-les pour acheter des objets uniques dans le jeu, les dépenser dans la 
    </div>
 </div> 
 
-Ainsi que plusieurs **categories** :
+Ainsi que plusieurs **catégories** :
 
 <div class="row mb-3 mx-2">
    <div class="col-4 p-1">
@@ -109,7 +106,7 @@ Ainsi que plusieurs **categories** :
       <img src="/images/badges/badge-mont.png" width="32px"/> Mont
    </div>
    <div class="col-4 p-1">
-      <img src="/images/badges/badge-museum.png" width="32px"/> Musee
+      <img src="/images/badges/badge-museum.png" width="32px"/> Musée
    </div>
    <div class="col-4 p-1">
       <img src="/images/badges/badge-parc.png" width="32px"/> Parc
@@ -131,17 +128,19 @@ Ainsi que plusieurs **categories** :
    </div>
 </div>
 
-Elle permettent aussi d’accomplir des 📜 **quetes** qui vont permettre d’obtenir des **récompenses**.  
+Elles permettent aussi d’accomplir des 📜 **quêtes** qui vont permettre d’obtenir des **récompenses**. Plus vous en réalisez, meilleur sera votre niveau et vos récompenses !
 
-- 📜 **Quetes :** 
+- 🐾 **CuriooCard :**  
+Utilisez-les pour acheter des objets uniques du jeu, dépensez-les dans la boutique locale du Guide ou faites évoluer vos cartes !
 
-Il existe une multitude de 📜 **quetes** a accomplir.
+- 📜 **Quêtes :** 
+Il existe une multitude de 📜 **quêtes** à accomplir.
 Certaines sont simples, d'autre moins. 
-Par exemple il y a des quetes pour ouvrir des 🕋 coffres, parcourrir des distances, recuperer certains types de cartes 🎴.
+Par exemple il y a des quêtes pour ouvrir des 🕋 coffres, parcourrir des distances, récupérer certains types de cartes 🎴.
 
-La 📜 **quetes** la plus importante est **d'evoluer** 🔀 ses 🎴 cartes. Lorsque l'on possede une carte et que l'on se trouve a sa position il est alors possible de la 🔀 **transformer**.
+La 📜 **quête** la plus importante est **de faire évoluer** 🔀 ses 🎴 cartes. Lorsque l'on possède une carte et que l'on se trouve à sa position il est alors possible de la 🔀 **transformer**.
 
-<span style="color:#f39c12;">💡 Exemple : Vous avez la carte Tour Eiffel et vous etes devant</span> 
+<span style="color:#f39c12;">💡 Exemple : Vous avez la carte Tour Eiffel et vous rejoignez les coordonnées indiquées sur la carte </span> 
 
 <div class="row mb-3 mx-2 text-center">
    <div class="col-4 p-1">
@@ -162,13 +161,13 @@ Rejoignez le **Classement des Explorateurs** et mesurez-vous aux autres joueurs 
 - Consultez votre position dans le classement.  
 - Visualisez les types de Circuits que vous avez complétés.  
 - Collectionnez les cartes
-- Comptez vos Jetons accumulés.
+- Échanger des cartes du jeu avec vos amis pour devenir le **meilleur Explorateur**.
 
 ---
 
 ### 🛍️ **Boutique :**
 Terminez un Circuit et accédez à la **boutique du Guide local** :  
-- **Dépensez vos Jetons** pour acheter des objets uniques.  
+- **Dépensez vos CuriooCard** pour acheter des objets uniques.  
 - **Soutenez la communauté locale** tout en vous faisant plaisir après une journée d'exploration.
 
 ---
