@@ -43,7 +43,7 @@ Votre mission, si vous l'acceptez, est simple :
    Plus le Circuit est chargé en coffres, plus vos gains seront généreux ! 🎁
    </div>
    <span style="color:#f39c12;">💡 Astuce : Vous pouvez <b>refaire un Circuit</b> autant de fois que vous le souhaitez !</span>  
-   Même si les Récompenses diminuent légèrement, certains coffres attribueront des <b>Cartes bonus de façon aléatoire</b>.  
+   Même si les Récompenses sont disponibles une fois par mois, certains coffres peuvent attribuer des <b>Cartes bonus de façon aléatoire</b>.  
    Qui sait, la chance vous sourira peut-être ?
    </div>
 </div>
