@@ -29,7 +29,7 @@ Votre mission, si vous l'acceptez, est simple :
    
 2. **Explorez et découvrez :**  
    Une fois arrivé au coffre, ouvrez le 🕋 **Trésor** qui vous attend et collectez votre 🎴 **Carte** !  
-   Chaque trésor n'est ouvrable qu'une seule fois par mois, alors **prenez vos baksets** et **baladez-vous** pour en découvrir un maximum. 
+   Chaque trésor n'est ouvrable qu'une seule fois par mois, alors **prenez vos basquettes** et **baladez-vous** pour en découvrir un maximum. 
 
 3. **Continuez votre progression :**  
    Le **prochain coffre** de votre Circuit sera automatiquement proposé. À chaque étape, de nouvelles cartes sont à découvrir pour enrichir votre **collection.**
