@@ -28,7 +28,7 @@
             macarte.addLayer(markerClusters);
         }
         window.onload = async function () {
-            const response = await fetch("https://auth.curioo.city/functions/v1/cities-v2");
+            const response = await fetch("https://api.curioo.city/api/cities");
             cities = await response.json();
             initMap();
         };
