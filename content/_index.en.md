@@ -66,7 +66,7 @@ You explore, you guide.
 </div>
 
 <div class="col">
-<div class="card text-bg-dark">
+<div class="card text-bg-dark" onclick="window.open('machines/', '_self');">
 <div class="card-body">
 
 ### 🕋 Treasures { .card-title }
