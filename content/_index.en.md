@@ -69,7 +69,7 @@ You explore, you guide.
 <div class="card text-bg-dark" onclick="window.open('machines/', '_self');">
 <div class="card-body">
 
-### 🕋 Treasures { .card-title }
+###  Treasures { .card-title }
 
 86+
 { .card-text .fs-1 .fw-bolder }
