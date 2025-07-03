@@ -28,7 +28,7 @@ Votre mission, si vous l'acceptez, est simple :
    <span style="color:#f39c12;">🌟 Conseil : Prenez un itinéraire stratégique pour maximiser vos gains !</span>
    
 2. **Explorez et découvrez :**  
-   Une fois arrivé au coffre, ouvrez le 🕋 **Trésor** qui vous attend et collectez votre 🎴 **Carte** !  
+   Une fois arrivé au coffre, ouvrez le **Trésor** qui vous attend et collectez votre 🎴 **Carte** !  
    Chaque trésor n'est ouvrable qu'une seule fois par mois, alors **prenez vos basquettes** et **baladez-vous** pour en découvrir un maximum. 
 
 3. **Continuez votre progression :**  
@@ -57,10 +57,10 @@ Votre mission, si vous l'acceptez, est simple :
 ---
 
 ### 🏆 **Vos récompenses :**
-- 🕋 **Coffres :**  
+-  **Coffres :**  
 À chaque découverte, ouvrez des trésors qui réservent des **cartes exceptionnelles** 🎴 ! Soyez attentif aux coordonnées présentes sur la carte, elles pourraient vous permettre d'améliorer votre collection !
 
-- 🕋 **Cartes :**  
+- **Cartes :**  
 **Collectionnez** les 🎴 !  Il existe plusieurs **type** de cartes :
 
 <div class="row mb-3 mx-2">
@@ -136,7 +136,7 @@ Utilisez-les pour acheter des objets uniques du jeu, dépensez-les dans la bouti
 - 📜 **Quêtes :** 
 Il existe une multitude de 📜 **quêtes** à accomplir.
 Certaines sont simples, d'autre moins. 
-Par exemple il y a des quêtes pour ouvrir des 🕋 coffres, parcourrir des distances, récupérer certains types de cartes 🎴.
+Par exemple il y a des quêtes pour ouvrir des coffres, parcourrir des distances, récupérer certains types de cartes 🎴.
 
 La 📜 **quête** la plus importante est **de faire évoluer** 🔀 ses 🎴 cartes. Lorsque l'on possède une carte et que l'on se trouve à sa position il est alors possible de la 🔀 **transformer**.
 
