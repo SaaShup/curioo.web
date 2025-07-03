@@ -69,7 +69,7 @@ draft = false
 <div class="card text-bg-dark" onclick="window.open('machines/', '_self');">
 <div class="card-body">
 
-### 🕋 Trésors { .card-title }
+### Trésors { .card-title }
 
 86+
 { .card-text .fs-1 .fw-bolder }
