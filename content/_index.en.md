@@ -32,7 +32,7 @@ You explore, you guide.
 
 ### 🌍 Guides { .card-title }
 
-14+
+40+
 { .card-text .fs-1 .fw-bolder }
 
 </div>
@@ -45,7 +45,7 @@ You explore, you guide.
 
 ### 🎒 Explorers { .card-title }
 
-100+
+1000+
 { .card-text .fs-1 .fw-bolder }
 
 </div>
@@ -69,9 +69,9 @@ You explore, you guide.
 <div class="card text-bg-dark" onclick="window.open('machines/', '_self');">
 <div class="card-body">
 
-###  Treasures { .card-title }
+### 🧰 Treasures { .card-title }
 
-86+
+400+
 { .card-text .fs-1 .fw-bolder }
 
 </div>

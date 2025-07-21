@@ -5,6 +5,10 @@
     <script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js'>
     </script>
     <script type="text/javascript">
+        var portalIcon = L.icon({
+            iconUrl: '/images/portal.png',
+            iconSize:     [48, 48]
+        });
         var lat = 48.689958;
         var lon = 6.174794;
         var macarte = null;
@@ -20,6 +24,7 @@
             }).addTo(macarte);
             for (const city of cities.cities) {
                 var marker = L.marker([city.latitude, city.longitude], {
+                    icon: portalIcon
                 });
                 let url = city.url.substring(0, city.url.indexOf('/api/'));
                 marker.bindPopup('<div class="text-center"><a href="' + url + '" target="_blank" style="color:black;text-decoration: none;"><div class="fw-bold m-2">' + city.name + '</div><div><img class="rounded" width="96px" height="96px" src="' + url + '/api/image"/></div></a></div>');
