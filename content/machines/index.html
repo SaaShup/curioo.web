@@ -2,8 +2,7 @@
     <div id="map" style="height: 800px;" class="my-3">
     </div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js'>
-    </script>
+    <script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js'></script>
     <script type="text/javascript">
         var machineIcon = L.icon({
             iconUrl: '/images/machine.png',
@@ -16,10 +15,10 @@
         var cards = {};
         function initMap() {
             macarte = L.map('map').setView([lat, lon], 6);
-            L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            L.tileLayer('https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=QktaEbiPNfxQ5KPdknah', {
                 attribution: 'curioomachines',
                 minZoom: 6,
-                maxZoom: 15
+                maxZoom: 18
             }).addTo(macarte);
             let c = 0;
             for (const card of cards.cards) {
