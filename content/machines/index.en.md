@@ -23,7 +23,6 @@
             let c = 0;
             for (const card of cards.cards) {
                 if (card.lat !== null && card.lon !== null) {
-                    console.log(card)
                     var marker = L.marker([card.lat, card.lon], {icon: machineIcon});
                     marker.bindPopup('<div class="text-center"><div class="fw-bold m-2">' + card.place + '</div><div><img class="rounded" width="96px" height="96px" src="/images/cards/2025/' + card.card_id + '-min.png"/></div></div>');
                     marker.addTo(macarte);
