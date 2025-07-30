@@ -4,12 +4,21 @@ date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
 
+<style>
+*, ::after, ::before{
+    max-width: 100%;
+}
+img {
+    border-radius: 2%;
+}
+</style>
+
 <section id="hero">
 <div class="container">
 
 ## Parcours, joue et découvre le monde
 
-<br>Tu explores, tu guides.<br><br>
+<span style="color: white;">Tu explores, tu guides.</span>
 
 <ul class="nav nav-pills justify-content-center">
     <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< ref "explore" >}}">🗺 Explorer</a></li>
@@ -26,7 +35,7 @@ draft = false
 
 <div class="row g-5">
 
-<div class="col">
+<div class="col-sm-3">
 <div class="card text-bg-dark" onclick="window.open('guides/', '_self');">
 <div class="card-body">
 
@@ -39,7 +48,7 @@ draft = false
 </div>
 </div>
 
-<div class="col">
+<div class="col-sm-3">
 <div class="card text-bg-dark">
 <div class="card-body">
 
@@ -52,26 +61,26 @@ draft = false
 </div>
 </div>
 
-<div class="col">
+<div class="col-sm-3">
 <div class="card text-bg-dark" onclick="window.open('cards/', '_self');">
 <div class="card-body">
 
 ### 🎴 Cartes { .card-title }
 
-100+
+120+
 { .card-text .fs-1 .fw-bolder }
 
 </div>
 </div>
 </div>
 
-<div class="col">
+<div class="col-sm-3">
 <div class="card text-bg-dark" onclick="window.open('machines/', '_self');">
 <div class="card-body">
 
 ### 🧰 Trésors { .card-title }
 
-400+
+600+
 { .card-text .fs-1 .fw-bolder }
 
 </div>

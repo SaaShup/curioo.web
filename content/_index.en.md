@@ -4,12 +4,21 @@ date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
 
+<style>
+*, ::after, ::before{
+    max-width: 100%;
+}
+img {
+    border-radius: 2%;
+}
+</style>
+
 <section id="hero">
 <div class="container">
 
 ## Explore, play and discover the world
 
-You explore, you guide.
+<span style="color: white;">You explore, you guide.<span>
 
 <ul class="nav nav-pills justify-content-center">
     <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< ref "explore" >}}">🗺 Explore</a></li>
@@ -58,7 +67,7 @@ You explore, you guide.
 
 ### 🎴 Cards { .card-title }
 
-100+
+120+
 { .card-text .fs-1 .fw-bolder }
 
 </div>
@@ -71,7 +80,7 @@ You explore, you guide.
 
 ### 🧰 Treasures { .card-title }
 
-400+
+600+
 { .card-text .fs-1 .fw-bolder }
 
 </div>

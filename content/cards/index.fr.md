@@ -59,24 +59,25 @@ var cards = {};
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("modal-image");
 
-function loadCards() {
-    let row = '<div class="container mt-3 mb-5"><div class="row">';
-            let cpt = 1;
+async function loadCards() {
             let edition = document.getElementById("edition-select").value;
-            for (i = 1 ; i < cards.length; i++) {
-                if (cards[i].edition.toString() === edition) {
+            const response = await fetch("https://api.curioo.city/api/cards/" + edition);
+            cards = await response.json();
+            let row = '<div class="container mt-3 mb-5"><div class="row">';
+            row += '<div class="container mt-3 mb-5"><div class="row">';
+            let cpt = 1;
+            let num_cards = cards.cards.length;
+            if (["ennery"].includes(edition)) num_cards = 4;
+            if (["nancy"].includes(edition)) num_cards = 19;
+            for (i = 1 ; i <= num_cards; i++) {
                     row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + cpt + '" src="/images/cards/' + edition + '/' + cpt + '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
                     cpt++;
-                }
             }
             row += '</div></div>';
             document.getElementById("cards").innerHTML = row;
 }
 
 window.onload = async function () {
-            const response = await fetch("/cards.json");
-            cards = await response.json();
-            let row = '<div class="container mt-3 mb-5"><div class="row">';
             loadCards();
         };
 
