@@ -60,6 +60,29 @@ Who knows? Luck might be on your side!
 
 ---
 
+- 🐾 **CuriooCoin :**  
+Use them to buy unique in-game items, spend them in the Guide’s local shop, or upgrade your cards!
+
+- 📜 **Quests :** 
+There are plenty of 📜 quests to complete.
+Some are simple, others less so.
+For example, there are quests to open 🧰 chests, travel certain distances, or collect specific types of 🎴 cards.
+The most common one is the 🧰 daily chest, which appears once a day and lets you discover a 🎴 card.
+
+The most important 📜 quest is to upgrade 🔀 your 🎴 cards. When you own a card and are at its location, it then becomes possible to 🔀 transform it.
+
+<div class="row mb-3 mx-2 text-center">
+   <div class="col-4 p-1">
+      <img src="/images/cards/2025/19-min.png" width="96px"/>
+   </div>
+   <div class="col-4 p-1">
+   <span style="font-size:5rem;width:100%;text-align:center;">🔀</span>
+   </div>
+   <div class="col-4 p-1">
+      <img src="/images/cards/2025/19-min-gold.png" width="96px"/>
+   </div>
+</div>
+
 ### 👑 **Become a Legend:**
 Climb the **Explorer Leaderboard** and compete with other players:  
 - Check your position on the leaderboard.  
@@ -79,4 +102,4 @@ Finish a Circuit to access the **local Guide's shop**:
 Choose your **first Point on the map** and uncover all that **curioo.city** has to offer.  
 The treasures are waiting for you! 🚀
 
-</div>
+</div><br><br>
