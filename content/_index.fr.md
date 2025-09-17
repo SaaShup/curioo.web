@@ -41,7 +41,7 @@ img {
 
 ### 🌍 Guides { .card-title }
 
-40+
+100+
 { .card-text .fs-1 .fw-bolder }
 
 </div></a>
@@ -80,7 +80,7 @@ img {
 
 ### 🧰 Trésors { .card-title }
 
-600+
+900+
 { .card-text .fs-1 .fw-bolder }
 
 </div>
