@@ -31,57 +31,56 @@ img {
 <section id="counter">
 <div class="container">
 
-## 🌟 Quelques Chiffres { .text-uppercase .mb-5 }
+## <span class="me-md-2">🌟</span><span>Quelques Chiffres</span> { .text-uppercase .mb-5 .d-flex .flex-column .flex-md-row .align-items-center .text-center .text-md-start}
 
-<div class="row g-5">
 
-<div class="col-sm-3">
-<div class="card text-bg-dark" onclick="window.open('guides/', '_self');">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mx-auto">
+
+<div class="col-md-3">
+<div class="card text-bg-dark cursor-pointer" onclick="window.open('guides/', '_self');">
 <div class="card-body">
 
 ### 🌍 Guides { .card-title }
 
 100+
-{ .card-text .fs-1 .fw-bolder }
-
-</div></a>
+{ .card-text .fs-1 .fw-bolder .numbers-increment}
+  
 </div>
 </div>
+</div>
 
-<div class="col-sm-3">
+<div class="col-md-3">
 <div class="card text-bg-dark">
 <div class="card-body">
 
 ### 🎒 Explorateurs { .card-title }
 
 1000+
-{ .card-text .fs-1 .fw-bolder }
-
+{ .card-text .fs-1 .fw-bolder .numbers-increment}
 </div>
 </div>
 </div>
 
-<div class="col-sm-3">
-<div class="card text-bg-dark" onclick="window.open('cards/', '_self');">
+<div class="col-md-3">
+<div class="card text-bg-dark cursor-pointer" onclick="window.open('cards/', '_self');">
 <div class="card-body">
 
 ### 🎴 Cartes { .card-title }
 
 120+
-{ .card-text .fs-1 .fw-bolder }
-
+{ .card-text .fs-1 .fw-bolder .numbers-increment}
 </div>
 </div>
 </div>
 
-<div class="col-sm-3">
-<div class="card text-bg-dark" onclick="window.open('machines/', '_self');">
+<div class="col-md-3">
+<div class="card text-bg-dark cursor-pointer" onclick="window.open('machines/', '_self');">
 <div class="card-body">
 
 ### 🧰 Trésors { .card-title }
 
 900+
-{ .card-text .fs-1 .fw-bolder }
+{ .card-text .fs-1 .fw-bolder .numbers-increment}
 
 </div>
 </div>
@@ -95,23 +94,23 @@ img {
 <section id="best-guides">
 <div class="container">
 
-## 👑 Nos Meilleurs Guides  { .text-uppercase .mb-5 }
+## <span class="me-md-2">👑</span><span>Nos Meilleurs Guides </span> { .text-uppercase .mb-5 .d-flex .flex-column .flex-md-row .align-items-center .text-center .text-md-start}
 
 Createur de parcours pour faire des marches amusantes et uniques
-{ .text-secondary }
+{ .text-secondary .text-center .text-md-start}
 
-<div class="row">
-    <div class="col-4 bestguide" onclick="window.open('https://www.nancy.fr');">
+<div class="row mx-auto">
+    <div class="col-12 col-md-4 bestguide cursor-pointer" onclick="window.open('https://www.nancy.fr');">
         {{< figure src="/images/guides/Nancy.png" width=100% >}}
-        <div align="center"><h3><b>NANCY</b></h3></div>
+        <div class="text-center mb-5"><h3><b>NANCY</b></h3></div>
     </div>
-    <div class="col-4 bestguide" onclick="window.open('https://www.parc-merveilleux.lu/');">
+    <div class="col-12 col-md-4 bestguide cursor-pointer" onclick="window.open('https://www.parc-merveilleux.lu/');">
         {{< figure src="/images/guides/Bettembourg.png" width=100% >}}
-        <div align="center"><h3><b>PARC BETTEMBOURG</b></h3></div>
+        <div class="text-center mb-5"><h3><b>PARC BETTEMBOURG</b></h3></div>
     </div>
-    <div class="col-4 bestguide" onclick="window.open('https://metz.fr');">
+    <div class="col-12 col-md-4 bestguide cursor-pointer" onclick="window.open('https://metz.fr');">
         {{< figure src="/images/guides/Metz.png" width=100% >}}
-        <div align="center"><h3><b>METZ</b></h3></div>
+        <div class="text-center mb-5"><h3><b>METZ</b></h3></div>
     </div>
 </div>
 </section>
@@ -119,7 +118,7 @@ Createur de parcours pour faire des marches amusantes et uniques
 <section id="play">
 <div class="container">
 
-## 🎮 TELECHARGE ET JOUE { .text-uppercase .mb-5 }
+## <span class="me-md-2">🎮</span><span>TELECHARGE ET JOUE</span> {.text-uppercase .mb-5 .d-flex .flex-column .flex-md-row .align-items-center .justify-content-center .text-center}
 
 <ul class="nav nav-pills justify-content-center">
     <li class="nav-item nav-link"><a class="btn btn-danger btn-lg" href="https://play.google.com/store/apps/details?id=city.curioo.explorer"><i class="bi-google-play"></i> Google Play</a></li>

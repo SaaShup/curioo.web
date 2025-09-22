@@ -104,6 +104,8 @@ footer .card {
   animation-duration: 0.6s;
 }
 
+.cursor-pointer {cursor: pointer;}
+
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)} 
   to {-webkit-transform:scale(1)}
