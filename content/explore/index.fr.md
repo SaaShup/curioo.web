@@ -24,10 +24,10 @@ Votre mission, si vous l'acceptez, est simple :
 
 ### 🚀 **Votre aventure commence ici :**
 1. **Choisissez votre point de départ :**  
-   Sélectionnez un **Portail dans le monde** et entrez dans le parcours d'un guide.  
+   Sélectionnez un **🌀 Portail dans le monde** et entrez dans le parcours d'un guide.  
 
-2. **Choisissez votre point de départ :**  
-   Sélectionnez un **Coffre dans le monde** et commencez à vous déplacer vers celui-ci.  
+2. **Choisissez votre point de départ dans le portail :**  
+   Sélectionnez un **🧰 Coffre dans le monde** et commencez à vous déplacer vers celui-ci.  
    <span style="color:#f39c12;">🌟 Conseil : Prenez un itinéraire stratégique pour maximiser vos gains !</span>
 
 3. **Explorez et découvrez :**  
@@ -41,7 +41,7 @@ Votre mission, si vous l'acceptez, est simple :
    <div class="col text-center py-3"><img class="rounded" src="/images/1stCCimage.png" width="320px" height="256px"/></div>
    <div class="col pt-3">
    <div class="mb-3">
-   <div>4. <b>Terminez le Circuit :</b></div>
+   <div>5. <b>Terminez le Circuit :</b></div>
    Lorsque vous atteignez le <b>dernier Coffre</b>, recevez la <b>Récompense du Circuit</b>.  
    Plus le Circuit est chargé en coffres, plus vos gains seront généreux ! 🎁
    </div>
@@ -50,6 +50,7 @@ Votre mission, si vous l'acceptez, est simple :
    Qui sait, la chance vous sourira peut-être ?
    </div>
 </div>
+
 ---
 
 ### 🎯 **Votre objectif :**
@@ -136,15 +137,19 @@ Elles permettent aussi d’accomplir des 📜 **quêtes** qui vont permettre d�
 - 🐾 **CuriooCoin :**  
 Utilisez-les pour acheter des objets uniques du jeu, dépensez-les dans la boutique locale du Guide ou faites évoluer vos cartes !
 
-- 📜 **Quêtes :** 
+- 📜 **Quêtes :** <br/>
 Il existe une multitude de 📜 **quêtes** à accomplir.
 Certaines sont simples, d'autre moins. 
 Par exemple il y a des quêtes pour ouvrir des 🧰 coffres, parcourrir des distances, récupérer certains types de cartes 🎴.
 La plus courrante est le coffre 🧰 journalier qui apparait une fois par jour et vous permet de decouvrir une carte 🎴.
 
-La 📜 **quête** la plus importante est **de faire évoluer** 🔀 ses 🎴 cartes. Lorsque l'on possède une carte et que l'on se trouve à sa position il est alors possible de la 🔀 **transformer**.
+   La 📜 **quête** la plus importante est **de faire évoluer** 🔀 ses 🎴 cartes. Lorsque l'on possède une carte et que l'on se trouve à sa position il est alors possible de la 🔀 **transformer**.
 
-<span style="color:#f39c12;">💡 Exemple : Vous avez la carte Place Stanislas et vous rejoignez les coordonnées indiquées sur la carte </span> 
+<div style="color:#f39c12; margin-left: 1.5rem;">
+   💡 Exemple : <br> Vous avez la carte Place Stanislas et vous rejoignez les coordonnées indiquées sur la 🎴 carte.<br/>
+   Vous pouvez alors dorer cette carte à <b>10 CuriooCoins</b> pour prouver à tous que vous y êtes allé !<br/>
+   Si vous n'avez pas la 🎴 carte, il faudra payer <b>40 CuriooCoins</b> !
+</div><br>
 
 <div class="row mb-3 mx-2 text-center">
    <div class="col-4 p-1">
@@ -158,6 +163,14 @@ La 📜 **quête** la plus importante est **de faire évoluer** 🔀 ses 🎴 ca
    </div>
 </div>
 
+- **🎴Cartes Guides :**<br>
+Repérez les **🎰 Machines à or** dans les 🌀 portails pour obtenir des **🎴 Cartes guides** déjà dorées contre <b>10 CuriooCoins</b>.
+
+   Les **🎴Cartes guides** sont créées par les guides et correspondent aux lieux que vous visitez.
+
+   Si certaines 🎴 cartes du monde que vous avez trouvées dans les coffres sont trop éloignées pour être dorées, concentrez-vous sur les **🎴 Cartes guides** afin de progresser plus rapidement dans votre collection !
+
+   
 ---
 
 ### 👑 **Devenez une légende :**
