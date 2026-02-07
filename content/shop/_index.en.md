@@ -1,0 +1,27 @@
+---
+title: "Shop"
+url: "/en/shop/"
+layout: "shop"
+    
+hero:
+  title: "CuriooCity Shop"
+  subtitle: "The store to enjoy even more."
+
+products:
+  - name: "Hoodie"
+    price: "29,99 €"
+    sizes: ["XS","S","M","L","XL","2XL"]
+    description: "Hoodie CuriooCity — confortable, simple, prêt pour l’exploration."
+    image: "/images/shop/hoodie.webp"
+
+  - name: "T-shirt"
+    price: "7,99 €"
+    sizes: ["2XS","XS","S","M","L","XL","2XL"]
+    description: "T-shirt CuriooCity — léger et parfait au quotidien."
+    image: "/images/shop/tshirt.webp"
+
+contact:
+  title: "Questions?"
+  text: "Email us for orders, partnerships, or info."
+  email: "contact@curioo.city"
+---
