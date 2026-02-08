@@ -1,92 +1,14 @@
 {{ define "main" }}
 {{ $p := .Params }}
 
-<style>
-    .shop-wrap {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 28px 18px
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 16px;
-        margin-top: 22px
-    }
-
-    .card {
-        grid-column: span 6;
-        border: 1px solid rgba(0, 0, 0, .08);
-        border-radius: 18px;
-        overflow: hidden
-    }
-
-    .card img {
-        width: 100%;
-        height: 260px;
-        object-fit: cover;
-        display: block;
-        background: #f3f3f3
-    }
-
-    .card-body {
-        padding: 16px
-    }
-
-    .card-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline
-    }
-
-    .price {
-        font-weight: 800
-    }
-
-    .desc {
-        margin: 10px 0 12px;
-        opacity: .85
-    }
-
-    .sizes {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px
-    }
-
-    .chip {
-        font-size: 12px;
-        padding: 6px 10px;
-        border-radius: 999px;
-        border: 1px solid rgba(0, 0, 0, .1)
-    }
-
-    .contact {
-        margin-top: 20px;
-        border: 1px solid rgba(0, 0, 0, .08);
-        border-radius: 18px;
-        padding: 16px
-    }
-
-    @media (max-width:900px) {
-        .card {
-            grid-column: span 12
-        }
-
-        .hero h1 {
-            font-size: 34px
-        }
-    }
-</style>
-
+<link rel="stylesheet" href="/css/shop.css">
 
 {{ with $p.hero }}
 <section id="hero">
-        <div class="container">
-            <h2 id="explore-play-and-discover-the-world">{{ .title }}</h1>
+    <div class="container">
+        <h2 id="explore-play-and-discover-the-world">{{ .title }}</h1>
             <p style="color:white;">{{ .subtitle }}</p>
-        </div>
+    </div>
 </section>
 {{ end }}
 
@@ -99,14 +21,44 @@
 
         {{ if (reflect.IsMap $item) }}
         <article class="card">
-            {{ with (index $item "image") }}
-            <img src="{{ . | relURL }}" alt="{{ index $item "name" }}">
+            {{ $name := index $item "name" }}
+            {{ $imgs := (index $item "images") }}
+
+            {{ if $imgs }}
+            <div class="p-carousel" data-carousel>
+                <div class="p-carousel__track" data-track>
+                    {{ range $i, $src := $imgs }}
+                    <div class="p-carousel__slide">
+                        <img src="{{ $src | relURL }}" alt="{{ $name }}" loading="lazy" decoding="async">
+                    </div>
+                    {{ end }}
+                </div>
+
+                {{ if ge (len $imgs) 2 }}
+                <div class="p-carousel__dots" data-dots>
+                    {{ range $i, $_ := $imgs }}
+                    <button type="button" class="p-carousel__dot {{ if eq $i 0 }}is-active{{ end }}"
+                        aria-label="Image {{ add $i 1 }}"></button>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
             {{ end }}
+
             <div class="card-body">
                 <div class="card-title">
                     <h3>{{ index $item "name" }}</h3>
-                    <div class="price">{{ index $item "price" }}</div>
+
+                    {{ with (index $item "coin_price") }}
+                    <button class="coin-btn coin-btn--primary" type="button" data-product="{{ index $item "name" }}"
+                        data-coins="{{ . }}">
+                        <span class="coin-amount">{{ . }}</span>
+                        <span class="coin-icon">🪙</span>
+                    </button>
+                    {{ end }}
                 </div>
+
+
                 {{ with (index $item "description") }}
                 <div class="desc">{{ . }}</div>
                 {{ end }}
@@ -145,4 +97,54 @@
 
 </div>
 
+
+<div class="cc-modal" id="cc-modal" aria-hidden="true"
+    data-msg-missing="{{ .Params.cc_missing_player }}"
+    data-msg-success="{{ .Params.cc_success }}"
+    data-msg-coins="{{ .Params.cc_coins }}">
+    <div class="cc-modal__overlay" data-cc-close></div>
+
+    <div class="cc-modal__panel" role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+        <div class="cc-modal__header">
+            <h3 id="cc-modal-title">{{ .Params.cc_title }}</h3>
+            <button class="cc-modal__close" type="button" aria-label="Close" data-cc-close>✕</button>
+        </div>
+
+        <div class="cc-modal__content">
+            <p class="cc-modal__summary">
+                <span id="cc-product"></span>
+                <span class="cc-modal__dot">•</span>
+                <span>
+                    <strong id="cc-coins">0</strong>
+                    {{ .Params.cc_coins }}
+                </span>
+            </p>
+
+            <form id="cc-form">
+                <label class="cc-label" for="cc-player-id">
+                    {{ .Params.cc_player_id }}
+                </label>
+
+                <input class="cc-input" id="cc-player-id" name="player_id" type="text" inputmode="text"
+                    autocomplete="off" placeholder="{{ .Params.cc_player_placeholder }}" required>
+
+                <div class="cc-actions">
+                    <button class="cc-btn cc-btn--ghost" type="button" data-cc-close>
+                        {{ .Params.cc_cancel }}
+                    </button>
+                    <button class="cc-btn cc-btn--primary" type="submit">
+                        {{ .Params.cc_continue }}
+                    </button>
+                </div>
+
+                <p class="cc-hint" id="cc-hint" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+{{ $js := resources.Get "js/shop.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
 {{ end }}

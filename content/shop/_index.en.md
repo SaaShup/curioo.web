@@ -9,19 +9,33 @@ hero:
 
 products:
   - name: "Hoodie"
-    price: "29,99 €"
+    coin_price: 500
     sizes: ["XS","S","M","L","XL","2XL"]
     description: "Hoodie CuriooCity — confortable, simple, prêt pour l’exploration."
-    image: "/images/shop/hoodie.webp"
+    images: 
+      - "/images/shop/hoodie.webp"
+      - "/images/shop/hoodie-back.webp"
 
   - name: "T-shirt"
-    price: "7,99 €"
+    coin_price: 100
     sizes: ["2XS","XS","S","M","L","XL","2XL"]
     description: "T-shirt CuriooCity — léger et parfait au quotidien."
-    image: "/images/shop/tshirt.webp"
+    images: 
+      - "/images/shop/tshirt.webp"
+      - "/images/shop/tshirt-back.webp"
 
 contact:
   title: "Questions?"
   text: "Email us for orders, partnerships, or info."
   email: "contact@curioo.city"
+
+cc_title: "Pay with CuriooCoins"
+cc_player_id: "Player ID"
+cc_player_placeholder: "Enter your Player ID"
+cc_cancel: "Cancel"
+cc_continue: "Continue"
+cc_success: "Request sent for"
+cc_missing_player: "Please enter your Player ID."
+cc_coins: "CuriooCoins"
+
 ---
