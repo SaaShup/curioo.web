@@ -173,133 +173,137 @@
         opacity: .65;
     }
 
-/* =========================
+    /* =========================
    CuriooCoins modal (black & white)
 ========================= */
 
-.cc-modal {
-  position: fixed;
-  inset: 0;
-  display: none;
-  z-index: 9999;
-}
+    .cc-modal {
+        position: fixed;
+        inset: 0;
+        display: none;
+        z-index: 9999;
+    }
 
-.cc-modal.is-open {
-  display: block;
-}
+    .cc-modal.is-open {
+        display: block;
+    }
 
-.cc-modal__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,.55);
-}
+    .cc-modal__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, .55);
+    }
 
-/* modal panel */
-.cc-modal__panel {
-  position: relative;
-  width: min(520px, calc(100% - 24px));
-  margin: 8vh auto 0;
-  background: #ffffff;
-  color: #000000;
-  border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.35);
-  padding: 14px 14px 16px;
-}
+    /* modal panel */
+    .cc-modal__panel {
+        position: relative;
+        width: min(520px, calc(100% - 24px));
+        margin: 8vh auto 0;
+        background: #ffffff;
+        color: #000000;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+        padding: 14px 14px 16px;
+    }
 
-/* header */
-.cc-modal__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
+    /* header */
+    .cc-modal__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
 
-.cc-modal__close {
-  background: transparent;
-  border: 0;
-  color: #000;
-  opacity: .6;
-  cursor: pointer;
-  font-size: 18px;
-}
+    .cc-modal__close {
+        background: transparent;
+        border: 0;
+        color: #000;
+        opacity: .6;
+        cursor: pointer;
+        font-size: 18px;
+    }
 
-.cc-modal__close:hover { opacity: 1; }
+    .cc-modal__close:hover {
+        opacity: 1;
+    }
 
-/* summary */
-.cc-modal__summary {
-  margin: 14px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  font-size: .9rem;
-}
+    /* summary */
+    .cc-modal__summary {
+        margin: 14px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: .9rem;
+    }
 
-.cc-modal__dot { opacity: .4; }
+    .cc-modal__dot {
+        opacity: .4;
+    }
 
-/* form */
-.cc-label {
-  display: block;
-  font-size: .85rem;
-  margin-bottom: 6px;
-  color: #333;
-}
+    /* form */
+    .cc-label {
+        display: block;
+        font-size: .85rem;
+        margin-bottom: 6px;
+        color: #333;
+    }
 
-.cc-input {
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #000;
-  outline: none;
-}
+    .cc-input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        background: #fff;
+        color: #000;
+        outline: none;
+    }
 
-.cc-input:focus {
-  border-color: #000;
-}
+    .cc-input:focus {
+        border-color: #000;
+    }
 
-/* actions */
-.cc-actions {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-  margin-top: 16px;
-}
+    /* actions */
+    .cc-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-top: 16px;
+    }
 
-.cc-btn {
-  border-radius: 999px;
-  padding: 10px 14px;
-  font-weight: 700;
-  cursor: pointer;
-  border: 1px solid #000;
-  background: transparent;
-  color: #000;
-}
+    .cc-btn {
+        border-radius: 999px;
+        padding: 10px 14px;
+        font-weight: 700;
+        cursor: pointer;
+        border: 1px solid #000;
+        background: transparent;
+        color: #000;
+    }
 
-.cc-btn--ghost:hover {
-  background: #f4f4f4;
-}
+    .cc-btn--ghost:hover {
+        background: #f4f4f4;
+    }
 
-.cc-btn--primary {
-  background: #000;
-  color: #fff;
-  border-color: #000;
-}
+    .cc-btn--primary {
+        background: #000;
+        color: #fff;
+        border-color: #000;
+    }
 
-.cc-btn--primary:hover {
-  background: #111;
-}
+    .cc-btn--primary:hover {
+        background: #111;
+    }
 
-/* hint */
-.cc-hint {
-  margin: 10px 0 0;
-  font-size: .85rem;
-  color: #444;
-  min-height: 1.2em;
-}
+    /* hint */
+    .cc-hint {
+        margin: 10px 0 0;
+        font-size: .85rem;
+        color: #444;
+        min-height: 1.2em;
+    }
 
 
 
