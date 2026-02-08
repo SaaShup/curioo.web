@@ -1,7 +1,3 @@
-+++
-title = 'CuriOO.city — Explore, find, fun'
-+++
-
 <div class="row" style="background-color: black;padding:50px;">
 <div class="container">
 <div class="row mx-5">

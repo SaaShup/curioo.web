@@ -1,0 +1,318 @@
+    .shop-wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 28px 18px
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+        margin-top: 22px
+    }
+
+    .card {
+        grid-column: span 6;
+        border: 1px solid rgba(0, 0, 0, .08);
+        border-radius: 18px;
+        overflow: hidden
+    }
+
+    .card img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        background: #f3f3f3
+    }
+
+    .card-body {
+        padding: 16px
+    }
+
+    .card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline
+    }
+
+    .price {
+        font-weight: 800
+    }
+
+    .desc {
+        margin: 10px 0 12px;
+        opacity: .85
+    }
+
+    .sizes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px
+    }
+
+    .chip {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 0, 0, .1)
+    }
+
+    .contact {
+        margin-top: 20px;
+        border: 1px solid rgba(0, 0, 0, .08);
+        border-radius: 18px;
+        padding: 16px
+    }
+
+    /* --- Product image carousel --- */
+    .p-carousel {
+        position: relative;
+    }
+
+    .p-carousel__track {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        border-radius: 14px;
+        scrollbar-width: none;
+    }
+
+    .p-carousel__track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .p-carousel__slide {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+    }
+
+    /* Make images consistent and nicer */
+    .p-carousel img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        /* square grid - change to 4/5 if you prefer */
+        object-fit: cover;
+        /* avoids stretching, crops nicely */
+    }
+
+    /* Dots */
+    .p-carousel__dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .p-carousel__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        border: 0;
+        opacity: .55;
+        cursor: pointer;
+    }
+
+    .p-carousel__dot.is-active {
+        opacity: 1;
+    }
+
+    .coin-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        padding: 10px 14px;
+        margin-top: 10px;
+
+        font-size: .9rem;
+        font-weight: 700;
+
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, .15);
+
+        background: #0f0f10;
+        color: #fff;
+
+        cursor: pointer;
+        user-select: none;
+        transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+
+    .coin-btn:hover {
+        transform: translateY(-1px);
+        background: #1a1a1c;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, .4);
+    }
+
+    .coin-btn:active {
+        transform: translateY(0);
+        background: #0b0b0c;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .35);
+    }
+
+    /* inner text tuning */
+    .coin-icon {
+        font-size: 1.05em;
+        opacity: .9;
+    }
+
+    .coin-amount {
+        font-size: 1.05em;
+        letter-spacing: .02em;
+    }
+
+    .coin-label {
+        font-size: .7em;
+        font-weight: 600;
+        opacity: .65;
+    }
+
+    /* =========================
+   CuriooCoins modal (black & white)
+========================= */
+
+    .cc-modal {
+        position: fixed;
+        inset: 0;
+        display: none;
+        z-index: 9999;
+    }
+
+    .cc-modal.is-open {
+        display: block;
+    }
+
+    .cc-modal__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, .55);
+    }
+
+    /* modal panel */
+    .cc-modal__panel {
+        position: relative;
+        width: min(520px, calc(100% - 24px));
+        margin: 8vh auto 0;
+        background: #ffffff;
+        color: #000000;
+        border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+        padding: 14px 14px 16px;
+    }
+
+    /* header */
+    .cc-modal__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .cc-modal__close {
+        background: transparent;
+        border: 0;
+        color: #000;
+        opacity: .6;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .cc-modal__close:hover {
+        opacity: 1;
+    }
+
+    /* summary */
+    .cc-modal__summary {
+        margin: 14px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: .9rem;
+    }
+
+    .cc-modal__dot {
+        opacity: .4;
+    }
+
+    /* form */
+    .cc-label {
+        display: block;
+        font-size: .85rem;
+        margin-bottom: 6px;
+        color: #333;
+    }
+
+    .cc-input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        background: #fff;
+        color: #000;
+        outline: none;
+    }
+
+    .cc-input:focus {
+        border-color: #000;
+    }
+
+    /* actions */
+    .cc-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-top: 16px;
+    }
+
+    .cc-btn {
+        border-radius: 999px;
+        padding: 10px 14px;
+        font-weight: 700;
+        cursor: pointer;
+        border: 1px solid #000;
+        background: transparent;
+        color: #000;
+    }
+
+    .cc-btn--ghost:hover {
+        background: #f4f4f4;
+    }
+
+    .cc-btn--primary {
+        background: #000;
+        color: #fff;
+        border-color: #000;
+    }
+
+    .cc-btn--primary:hover {
+        background: #111;
+    }
+
+    /* hint */
+    .cc-hint {
+        margin: 10px 0 0;
+        font-size: .85rem;
+        color: #444;
+        min-height: 1.2em;
+    }
+
+
+
+    @media (max-width:900px) {
+        .card {
+            grid-column: span 12
+        }
+
+        .hero h1 {
+            font-size: 34px
+        }
+    }
