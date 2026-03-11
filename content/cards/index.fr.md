@@ -75,6 +75,7 @@ async function loadCards() {
             }
             if (["2025"].includes(edition)) {
                 cpt = 1;
+                num_cards = 0;
                 if (country == "fr") {
                     num_cards = 121;
                     cpt = 1;
