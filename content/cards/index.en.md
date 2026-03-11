@@ -69,11 +69,12 @@ async function loadCards() {
             let num_cards = cards.cards.length;
             if (["ennery"].includes(edition)) num_cards = 4;
             if (["nancy"].includes(edition)) num_cards = 19;
-            if (["2026"].includes(edition)) {
+            if (["2026"].includes(edition) && country == "sw") {
                 num_cards = 21;
                 cpt = 432;
             }
             if (["2025"].includes(edition)) {
+                cpt = 1;
                 if (country == "fr") cpt = 1 ;
                 if (country == "lu") cpt = 121;
             }
