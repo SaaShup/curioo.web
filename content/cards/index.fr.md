@@ -68,6 +68,10 @@ async function loadCards() {
             let num_cards = cards.cards.length;
             if (["ennery"].includes(edition)) num_cards = 4;
             if (["nancy"].includes(edition)) num_cards = 19;
+            if (["2026"].includes(edition)) {
+                num_cards = 41;
+                cpt = 121;
+            }
             for (i = 1 ; i <= num_cards; i++) {
                     row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + cpt + '" src="/images/cards/' + edition + '/' + cpt + '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
                     cpt++;
