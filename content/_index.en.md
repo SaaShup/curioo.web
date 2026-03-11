@@ -67,7 +67,7 @@ img {
 
 ### 🎴 Cards { .card-title }
 
-120+
+160+
 { .card-text .fs-1 .fw-bolder .numbers-increment}
 
 </div>

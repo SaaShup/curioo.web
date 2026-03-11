@@ -5,12 +5,15 @@
         <label class="text-white fw-bold mb-3 h4">🗺 Pays: </label>
         <select class="form-select" name="country" id="country-select">
             <option value="fr">France</option>
+            <option value="lu">Luxembourg</option>
+            <option value="lu">Suisse</option>
         </select>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">📅 Edition: </label>
         <select class="form-select" name="year" id="edition-select"  onchange="loadCards();">
             <option value="2025">2025</option>
+            <option value="2026">2026</option>
             <option value="ennery">Ennery</option>
             <option value="nancy">Nancy</option>
         </select>
