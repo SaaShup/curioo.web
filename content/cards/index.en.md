@@ -3,7 +3,7 @@
 <div class="row mx-5">
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🗺 Country: </label>
-        <select class="form-select" name="country" id="country-select">
+        <select class="form-select" name="country" id="country-select" onchange="loadCards();">
             <option value="fr">France</option>
             <option value="lu">Luxemburg</option>
             <option value="sw">Switzerland</option>
@@ -80,8 +80,8 @@ async function loadCards() {
                     cpt = 1;
                 }
                 if (country == "lu") {
-                    num_cards = 21;
-                    cpt = 121;
+                    num_cards = 20;
+                    cpt = 122;
                 }
             }
             for (i = cpt ; i <= num_cards; i++) {
