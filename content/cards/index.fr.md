@@ -75,8 +75,14 @@ async function loadCards() {
             }
             if (["2025"].includes(edition)) {
                 cpt = 1;
-                if (country == "fr") cpt = 1 ;
-                if (country == "lu") cpt = 121;
+                if (country == "fr") {
+                    num_cards = 121;
+                    cpt = 1;
+                }
+                if (country == "lu") {
+                    num_cards = 21;
+                    cpt = 121;
+                }
             }
             for (i = 1 ; i <= num_cards; i++) {
                     row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + cpt + '" src="/images/cards/' + edition + '/' + cpt + '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
