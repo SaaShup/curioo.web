@@ -4,42 +4,21 @@
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🗺 Country: </label>
         <select class="form-select" name="country" id="country-select" onchange="loadCards();">
-            <option value="fr">France</option>
-            <option value="lu">Luxemburg</option>
-            <option value="sw">Switzerland</option>
-        </select>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
-        <label class="text-white fw-bold mb-3 h4">📅 Edition: </label>
-        <select class="form-select" name="year" id="edition-select"  onchange="loadCards();">
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="ennery">Ennery</option>
-            <option value="nancy">Nancy</option>
+            <option value="france">France</option>
+            <option value="luxembourg">Luxemburg</option>
+            <option value="suisse">Switzerland</option>
+            <option value="belgique">Belgium</option>
         </select>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🧾 Type: </label>
-        <select class="form-select" name="type" id="type-select">
-            <option value="0">---</option>
-            <option value="1">Nature</option>
-            <option value="2">Monument</option>
-            <option value="3">Culte</option>
-            <option value="4">Event</option>
-            <option value="5">Location</option>
-        </select>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
-        <label class="text-white fw-bold mb-3 h4">🏷 Category: </label>
-        <select class="form-select" name="category" id="category-select">
-            <option value="0">---</option>
-            <option value="1">Place</option>
-            <option value="2">Mountain</option>
-            <option value="3">Castle</option>           
-            <option value="4">Beach</option> 
-            <option value="5">Forest</option> 
-            <option value="6">Museum</option>
-            <option value="7">Park</option>
+        <select class="form-select" name="type" id="type-select" onchange="loadCards();">
+            <option value="">---</option>
+            <option value="Nature">Nature</option>
+            <option value="Monument">Monument</option>
+            <option value="Culte">Cult</option>
+            <option value="Evenement">Event</option>
+            <option value="Lieu">Place</option>
         </select>
     </div>
 </div>
@@ -54,48 +33,29 @@
 </div>
 
 <script>
-var cards = {};
-var modal = document.getElementById("myModal");
-var modalImg = document.getElementById("modal-image");
+    var cards = {};
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modal-image");
 
-async function loadCards() {
-            let edition = document.getElementById("edition-select").value;
-            let country = document.getElementById("country-select").value;
-            const response = await fetch("https://api.curioo.city/api/cards/" + edition);
-            cards = await response.json();
-            let row = '<div class="container mt-3 mb-5"><div class="row">';
-            row += '<div class="container mt-3 mb-5"><div class="row">';
-            let cpt = 1;
-            let num_cards = cards.cards.length;
-            if (["ennery"].includes(edition)) num_cards = 4;
-            if (["nancy"].includes(edition)) num_cards = 19;
-            if (["2026"].includes(edition) && country == "sw") {
-                num_cards = 21;
-                cpt = 432;
-            }
-            if (["2025"].includes(edition)) {
-                cpt = 1;
-                num_cards = 0;
-                if (country == "fr") {
-                    num_cards = 121;
-                    cpt = 1;
-                }
-                if (country == "lu") {
-                    num_cards = 20;
-                    cpt = 122;
-                }
-            }
-            for (i = cpt ; i <= num_cards; i++) {
-                    row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + i + '" src="/images/cards/' + edition + '/' + i + '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
-                    cpt++;
-            }
-            row += '</div></div>';
-            document.getElementById("cards").innerHTML = row;
-}
+    async function loadCards() {
+        let country = document.getElementById("country-select").value;
+        let type = document.getElementById("type-select").value;
+        const response = await fetch("https://api.curioo.city/api/cards/");
+        cards = await response.json();
+        let row = '<div class="container mt-3 mb-5"><div class="row">';
+        row += '<div class="container mt-3 mb-5"><div class="row">';
+        for (var card of cards.cards) {
+            if (country.toLowerCase() != card.country.toLowerCase()) continue;
+            if (type.toLowerCase() != card.type.toLowerCase() && type != "") continue;
+            row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + card.card_id + '" src="/images/cards/' + card.card_id +
+                '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
+        }
+        row += '</div></div>';
+        document.getElementById("cards").innerHTML = row;
+    }
 
-window.onload = async function () {
-            loadCards();
-        };
-
+    window.onload = async function () {
+        loadCards();
+    };
 </script>
 </div>
