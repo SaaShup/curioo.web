@@ -4,18 +4,10 @@
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🗺 Country: </label>
         <select class="form-select" name="country" id="country-select" onchange="loadCards();">
-            <option value="fr">France</option>
-            <option value="lu">Luxemburg</option>
-            <option value="sw">Switzerland</option>
-        </select>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
-        <label class="text-white fw-bold mb-3 h4">📅 Edition: </label>
-        <select class="form-select" name="year" id="edition-select"  onchange="loadCards();">
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="ennery">Ennery</option>
-            <option value="nancy">Nancy</option>
+            <option value="france">France</option>
+            <option value="luxembourg">Luxemburg</option>
+            <option value="suisse">Switzerland</option>
+            <option value="belgique">Belgium</option>
         </select>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
@@ -29,19 +21,6 @@
             <option value="5">Location</option>
         </select>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
-        <label class="text-white fw-bold mb-3 h4">🏷 Category: </label>
-        <select class="form-select" name="category" id="category-select">
-            <option value="0">---</option>
-            <option value="1">Place</option>
-            <option value="2">Mountain</option>
-            <option value="3">Castle</option>           
-            <option value="4">Beach</option> 
-            <option value="5">Forest</option> 
-            <option value="6">Museum</option>
-            <option value="7">Park</option>
-        </select>
-    </div>
 </div>
 </div>
 </div>
@@ -53,6 +32,7 @@
 <div id="cards">
 </div>
 
+
 <script>
     var cards = {};
     var modal = document.getElementById("myModal");
@@ -60,32 +40,15 @@
 
     async function loadCards() {
         let country = document.getElementById("country-select").value;
+        console.log(country)
         const response = await fetch("https://api.curioo.city/api/cards/");
         cards = await response.json();
         let row = '<div class="container mt-3 mb-5"><div class="row">';
         row += '<div class="container mt-3 mb-5"><div class="row">';
-        let cpt = 1;
-        let num_cards = cards.cards.length;
-        if (country == "sw") {
-            num_cards = 21;
-            cpt = 432;
-        }
-        if (country == "be") {
-            num_cards = 21;
-            cpt = 453;
-        }
-        if (country == "fr") {
-            num_cards = 121;
-            cpt = 1;
-        }
-        if (country == "lu") {
-            num_cards = 20;
-            cpt = 122;
-        }
-        for (i = 1; i <= num_cards; i++) {
-            row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + cpt + '" src="/images/cards/' + cpt +
+        for (var card of cards.cards) {
+            if ('country' in card && country.toLowerCase() == card.country.toLowerCase())
+            row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + card.card_id + '" src="/images/cards/' + card.card_id +
                 '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
-            cpt++;
         }
         row += '</div></div>';
         document.getElementById("cards").innerHTML = row;
