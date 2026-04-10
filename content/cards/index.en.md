@@ -12,13 +12,13 @@
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🧾 Type: </label>
-        <select class="form-select" name="type" id="type-select">
-            <option value="0">---</option>
-            <option value="1">Nature</option>
-            <option value="2">Monument</option>
-            <option value="3">Culte</option>
-            <option value="4">Event</option>
-            <option value="5">Location</option>
+        <select class="form-select" name="type" id="type-select" onchange="loadCards();">
+            <option value="">---</option>
+            <option value="Nature">Nature</option>
+            <option value="Monument">Monument</option>
+            <option value="Culte">Cult</option>
+            <option value="Evenement">Event</option>
+            <option value="Lieu">Place</option>
         </select>
     </div>
 </div>
@@ -32,7 +32,6 @@
 <div id="cards">
 </div>
 
-
 <script>
     var cards = {};
     var modal = document.getElementById("myModal");
@@ -40,13 +39,14 @@
 
     async function loadCards() {
         let country = document.getElementById("country-select").value;
-        console.log(country)
+        let type = document.getElementById("type-select").value;
         const response = await fetch("https://api.curioo.city/api/cards/");
         cards = await response.json();
         let row = '<div class="container mt-3 mb-5"><div class="row">';
         row += '<div class="container mt-3 mb-5"><div class="row">';
         for (var card of cards.cards) {
-            if ('country' in card && country.toLowerCase() == card.country.toLowerCase())
+            if (country.toLowerCase() != card.country.toLowerCase()) continue;
+            if (type.toLowerCase() != card.type.toLowerCase() && type != "") continue;
             row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + card.card_id + '" src="/images/cards/' + card.card_id +
                 '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
         }
