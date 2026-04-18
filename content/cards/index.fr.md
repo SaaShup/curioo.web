@@ -8,6 +8,8 @@
                     <option value="luxembourg">Luxembourg</option>
                     <option value="suisse">Suisse</option>
                     <option value="belgique">Belgique</option>
+                    <option value="irlande">Irlande</option>
+                    <option value="portugal">Portugal</option>
                 </select>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
