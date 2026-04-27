@@ -27,7 +27,7 @@
         var cards = {};
         function initMap() {
             macarte = L.map('map').setView([lat, lon], 6);
-            L.tileLayer('https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=QktaEbiPNfxQ5KPdknah', {
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: 'curioomachines',
                 minZoom: 6,
                 maxZoom: 18
