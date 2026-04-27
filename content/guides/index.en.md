@@ -29,7 +29,7 @@
         function initMap() {
             macarte = L.map('map').setView([lat, lon], 7);
             markerClusters = L.markerClusterGroup();
-            L.tileLayer('https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=QktaEbiPNfxQ5KPdknah', {
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: 'curioocity',
                 minZoom: 7,
                 maxZoom: 15
