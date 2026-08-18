@@ -113,8 +113,4 @@ As a Guide, you can create your own **local shop**.
 Start designing your Circuits, attract Explorers, and bring your area to life with exciting adventures.  
 Your creativity will make **curioo.city** unforgettable! 🚀
 
-<div class="text-center my-4">
-    <a class="btn btn-dark btn-lg" href="https://admin.curioo.city/order?template=guide">✨ No portal in your city? Click here and create one</a>
-</div>
-
 </div>

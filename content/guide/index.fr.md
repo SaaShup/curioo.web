@@ -128,8 +128,4 @@ En tant que Guide, vous pouvez créer votre propre **boutique locale**.
 Commencez à concevoir vos Circuits, attirez des Explorateurs et donnez vie à votre région avec des aventures passionnantes.  
 Votre créativité rendra **curioo.city** inoubliable ! 🚀
 
-<div class="text-center my-4">
-    <a class="btn btn-dark btn-lg" href="https://admin.curioo.city/order?template=guide">✨ Pas de portail dans ta ville ? Clique ici et crée-en un</a>
-</div>
-
 </div>

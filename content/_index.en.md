@@ -123,9 +123,45 @@ Journey designer for fun and unique walks.
 ## <span class="me-md-2">🎮</span><span>DOWNLOAD AND PLAY</span> {.text-uppercase .mb-5 .d-flex .flex-column .flex-md-row .align-items-center .justify-content-center .text-center}
 
 <ul class="nav nav-pills justify-content-center">
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://play.google.com/store/apps/details?id=city.curioo.explorer"><i class="bi-google-play"></i> GooglePlay</a></li>
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="https://www.apple.com/fr/app-store/"><i class="bi-apple"></i> App Store</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-danger btn-lg" href="https://play.google.com/store/apps/details?id=city.curioo.explorer"><i class="bi-google-play"></i> GooglePlay</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-primary btn-lg" href="https://www.apple.com/fr/app-store/"><i class="bi-apple"></i> App Store</a></li>
 </ul>
+
+</div>
+</section>
+
+<section id="create-guide" class="pb-5 pb-lg-0">
+<div class="container-lg">
+
+## <span class="me-md-2"><img class="portal-icon" src="/images/portal.png" alt=""></span><span>CREATE YOUR PORTAL</span> {.text-uppercase .mb-5 .d-flex .flex-column .flex-md-row .align-items-center .justify-content-center .text-center}
+
+<div class="row justify-content-center align-items-end gx-4 gy-5 create-guide-steps">
+    <div class="col-12 col-lg-4 mt-0">
+        <div class="step step-1 position-relative text-center text-white d-flex flex-column justify-content-center d-lg-block">
+            <div class="step-circle position-absolute z-2 d-flex align-items-center justify-content-center rounded-circle border border-5 border-white text-white fs-2 fw-bolder shadow">1</div>
+            <h3 class="fw-bold">Create a website for your Guide</h3>
+            <p>Get a dedicated, ready-to-use website for your Guide in just a few clicks</p>
+            <a class="btn btn-light btn-lg bg-white align-self-center" href="https://admin.curioo.city/order?template=guide" target="_blank" rel="noopener"><img class="saashup-logo" src="/images/saashup_logo.svg" alt="SaaShup"> Create your portal <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
+            <small class="d-block mt-2 opacity-75">Hosted by SaaShup</small>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="step step-2 position-relative text-center text-white d-flex flex-column justify-content-center d-lg-block">
+            <div class="step-circle position-absolute z-2 d-flex align-items-center justify-content-center rounded-circle border border-5 border-white text-white fs-2 fw-bolder shadow">2</div>
+            <h3 class="fw-bold">Create your account</h3>
+            <p>Create your account so that only you have access to your Guide</p>
+            <img class="step-icon d-block mx-auto mt-0 mt-lg-4" id="profile-icon" src="/images/profile-icon.svg" alt="">
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="step step-3 position-relative text-center text-white d-flex flex-column justify-content-center d-lg-block">
+            <div class="step-circle position-absolute z-2 d-flex align-items-center justify-content-center rounded-circle border border-5 border-white text-white fs-2 fw-bolder shadow">3</div>
+            <h3 class="fw-bold">Place the treasures</h3>
+            <p class="m-0">Add your treasures on the map and let Explorers discover your area</p>
+            <img class="step-icon d-block mx-auto mt-0 mt-lg-4" src="/images/tresors.svg" alt="">
+        </div>
+    </div>
+</div>
 
 </div>
 </section>

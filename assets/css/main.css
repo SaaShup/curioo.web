@@ -38,17 +38,91 @@ body {
   text-shadow: #f2f2f2 2px 2px 3px;
 }
 
-footer, #counter {
+footer, #counter, #play {
   color: #fff;
   background: #000;
 }
 
-#counter h2, #best-guides h2, #play h2 {
+#counter h2, #best-guides h2, #play h2, #create-guide h2 {
   font-size: 3em;
 }
 
 footer, #counter, #best-guides, #play {
   padding: 60px 0;
+}
+
+#create-guide {
+  padding: 60px 0 0;
+}
+
+#create-guide .portal-icon {
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+.create-guide-steps {
+  margin-top: 60px;
+}
+
+.create-guide-steps .step {
+  padding: 64px 28px 32px;
+  border-radius: 20px 20px 0 0;
+}
+
+.create-guide-steps .step h3 {
+  font-size: 1.4em;
+}
+
+.create-guide-steps .step-1 {
+  background: #f7941d;
+}
+
+.create-guide-steps .step-2 {
+  background: #b669ce;
+}
+
+.create-guide-steps .step-3 {
+  background: #3cb4d8;
+}
+
+.create-guide-steps .step-icon {
+  width: 150px;
+}
+
+#profile-icon {
+  width: 100px;
+}
+
+.create-guide-steps .step-circle {
+  top: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84px;
+  height: 84px;
+  background: inherit;
+}
+
+.create-guide-steps .saashup-logo {
+  height: 1.4em;
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
+}
+
+.create-guide-steps.anim-ready .step {
+  transform: translateY(calc(100% + 60px));
+}
+
+.create-guide-steps.in-view .step {
+  transform: none;
+  transition: transform 0.7s ease-out;
+}
+
+.create-guide-steps.in-view > div:nth-child(2) .step {
+  transition-delay: 0.25s;
+}
+
+.create-guide-steps.in-view > div:nth-child(3) .step {
+  transition-delay: 0.5s;
 }
 
 .bestguide:hover {
@@ -119,5 +193,67 @@ footer .card {
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .create-guide-steps {
+    margin-top: 0;
+  }
+
+  .create-guide-steps > div {
+    padding-left: 0;
+  }
+
+  .create-guide-steps .step {
+    border-radius: 0 20px 20px 0;
+    padding: 24px 76px 24px 20px;
+    height: 230px;
+  }
+
+  .create-guide-steps .step-1 {
+    width: 70%;
+  }
+
+  .create-guide-steps .step-2 {
+    width: 78%;
+  }
+
+  .create-guide-steps .step-3 {
+    width: 86%;
+  }
+
+  .create-guide-steps .step-circle {
+    left: auto;
+    right: -47px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .create-guide-steps.anim-ready .step {
+    transform: translateX(calc(-100% - 60px));
+  }
+
+  .create-guide-steps.in-view .step {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .create-guide-steps.anim-ready .step {
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .create-guide-steps .step-1,
+  .create-guide-steps .step-2,
+  .create-guide-steps .step-3 {
+    width: 90%;
+  }
+
+  .create-guide-steps .step-icon {
+    width: 100px;
   }
 }
