@@ -38,7 +38,7 @@ body {
   text-shadow: #f2f2f2 2px 2px 3px;
 }
 
-footer, #counter, #play {
+footer, #counter {
   color: #fff;
   background: #000;
 }
