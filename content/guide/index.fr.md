@@ -129,3 +129,39 @@ Commencez à concevoir vos Circuits, attirez des Explorateurs et donnez vie à v
 Votre créativité rendra **curioo.city** inoubliable ! 🚀
 
 </div>
+
+<section id="create-guide" class="pb-5 pb-lg-0">
+<div class="container-lg">
+
+## <span class="me-md-2"><img class="portal-icon" src="/images/portal.png" alt=""></span><span>CRÉE TON PORTAIL</span> {.text-uppercase .mb-5 .d-flex .flex-column .flex-md-row .align-items-center .justify-content-center .text-center}
+
+<div class="row justify-content-center align-items-end gx-4 gy-5 create-guide-steps">
+    <div class="col-12 col-lg-4 mt-0">
+        <div class="step step-1 position-relative text-center text-white d-flex flex-column justify-content-center d-lg-block">
+            <div class="step-circle position-absolute z-2 d-flex align-items-center justify-content-center rounded-circle border border-5 border-white text-white fs-2 fw-bolder shadow">1</div>
+            <h3 class="fw-bold">Crée un site web pour ton Guide</h3>
+            <p>Obtiens en quelques clics un site web dédié à ton Guide, prêt à l'emploi</p>
+            <a class="btn btn-light btn-lg bg-white align-self-center" href="https://admin.curioo.city/order?template=guide" target="_blank" rel="noopener">Crée ton portail <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
+            <small class="d-block mt-2"><span class="opacity-75">Hébergé par</span> <a href="https://saashup.com" target="_blank" rel="noopener"><img class="saashup-logo bg-white rounded-circle p-1 ms-1" src="/images/saashup_logo.svg" alt="SaaShup"></a></small>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="step step-2 position-relative text-center text-white d-flex flex-column justify-content-center d-lg-block">
+            <div class="step-circle position-absolute z-2 d-flex align-items-center justify-content-center rounded-circle border border-5 border-white text-white fs-2 fw-bolder shadow">2</div>
+            <h3 class="fw-bold">Crée ton compte</h3>
+            <p>Crée ton compte pour qu'uniquement toi aies accès à ton Guide</p>
+            <img class="step-icon d-block mx-auto mt-0 mt-lg-4" id="profile-icon" src="/images/profile-icon.svg" alt="">
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="step step-3 position-relative text-center text-white d-flex flex-column justify-content-center d-lg-block">
+            <div class="step-circle position-absolute z-2 d-flex align-items-center justify-content-center rounded-circle border border-5 border-white text-white fs-2 fw-bolder shadow">3</div>
+            <h3 class="fw-bold">Place les trésors</h3>
+            <p class="m-0">Ajoute tes trésors sur la carte et fais découvrir ta région aux Explorateurs</p>
+            <img class="step-icon d-block mx-auto mt-0 mt-lg-4" src="/images/tresors.svg" alt="">
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
