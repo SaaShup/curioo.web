@@ -126,8 +126,8 @@ Your creativity will make **curioo.city** unforgettable! 🚀
             <div class="step-circle position-absolute z-2 d-flex align-items-center justify-content-center rounded-circle border border-5 border-white text-white fs-2 fw-bolder shadow">1</div>
             <h3 class="fw-bold">Create a website for your Guide</h3>
             <p>Get a dedicated, ready-to-use website for your Guide in just a few clicks</p>
-            <a class="btn btn-light btn-lg bg-white align-self-center" href="https://admin.curioo.city/order?template=guide" target="_blank" rel="noopener"><img class="saashup-logo" src="/images/saashup_logo.svg" alt="SaaShup"> Create your portal <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
-            <small class="d-block mt-2 opacity-75">Hosted by SaaShup</small>
+            <a class="btn btn-light btn-lg bg-white align-self-center" href="https://admin.curioo.city/order?template=guide" target="_blank" rel="noopener">Create your portal <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
+            <small class="d-block mt-2"><span class="opacity-75">Hosted by</span> <a href="https://saashup.com" target="_blank" rel="noopener"><img class="saashup-logo bg-white rounded-circle p-1 ms-1" src="/images/saashup_logo.svg" alt="SaaShup"></a></small>
         </div>
     </div>
     <div class="col-12 col-lg-4">

@@ -103,9 +103,10 @@ footer, #counter, #best-guides, #play {
 }
 
 .create-guide-steps .saashup-logo {
-  height: 1.4em;
-  vertical-align: text-bottom;
-  margin-right: 0.3em;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .create-guide-steps.anim-ready .step {
@@ -246,14 +247,33 @@ footer .card {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 630px) {
   .create-guide-steps .step-1,
   .create-guide-steps .step-2,
   .create-guide-steps .step-3 {
     width: 90%;
+    height: 300px;
   }
 
-  .create-guide-steps .step-icon {
-    width: 100px;
+}
+
+
+@media (min-width: 992px) {
+  .create-guide-steps .step-2 {
+    min-height: 360px;
+  }
+
+  .create-guide-steps .step-3 {
+    min-height: 420px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .create-guide-steps .step-2 {
+    min-height: 450px;
+  }
+
+  .create-guide-steps .step-3 {
+    min-height: 510px;
   }
 }
