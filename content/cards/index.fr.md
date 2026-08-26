@@ -1,6 +1,6 @@
-<div class="row p-3 pb-5" style="background-color: black;margin: 0px;">
+<div class="py-3 pb-5" style="background-color: black;">
     <div class="container">
-        <div class="row mx-5">
+        <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
                 <label class="text-white fw-bold mb-3 h4">🗺 Pays: </label>
                 <select class="form-select" name="country" id="country-select" onchange="loadCards();">
@@ -34,27 +34,63 @@
 <div id="cards">
 </div>
 
+<style>
+    @keyframes cards-loading-pulse {
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 0.9; }
+    }
+    @keyframes cards-loading-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+
 <script>
     var cards = {};
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modal-image");
 
+    function showLoading() {
+        document.getElementById("cards").innerHTML =
+            '<div class="container my-5 py-4 text-center" style="animation: cards-loading-pulse 2s ease-in-out infinite;">' +
+            '<img src="/images/logo.png" alt="Chargement" style="width: 48px; animation: cards-loading-spin 1.5s linear infinite;"/>' +
+            '<p class="text-muted mt-3 mb-0" style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem;">Chargement…</p>' +
+            '</div>';
+    }
+
+    var loadSeq = 0;
+
     async function loadCards() {
+        const seq = ++loadSeq;
         let country = document.getElementById("country-select").value;
         let type = document.getElementById("type-select").value;
+        showLoading();
         const response = await fetch("https://api.curioo.city/api/cards/");
         cards = await response.json();
         let row = '<div class="container mt-3 mb-5"><div class="row">';
-        row += '<div class="container mt-3 mb-5"><div class="row">';
         for (var card of cards.cards) {
             if (country.toLowerCase() != card.country.toLowerCase()) continue;
             if (type.toLowerCase() != card.type.toLowerCase() && type != "") continue;
-            row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + card.card_id + '" src="/images/cards/' + card.card_id +
+            row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + card.card_id + '" src="https://api.curioo.city/images/' + card.card_id + '/' + card.card_id +
                 '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
         }
         row += '</div></div>';
-        document.getElementById("cards").innerHTML = row;
+        const grid = document.createElement('div');
+        grid.innerHTML = row;
+        await Promise.all(Array.from(grid.querySelectorAll('img')).map(function (img) {
+            return new Promise(function (resolve) {
+                if (img.complete) return resolve();
+                img.addEventListener('load', resolve);
+                img.addEventListener('error', resolve);
+            });
+        }));
+        if (seq !== loadSeq) return;
+        const container = document.getElementById("cards");
+        container.innerHTML = "";
+        container.appendChild(grid);
     }
+
+    showLoading();
 
     window.onload = async function () {
         loadCards();

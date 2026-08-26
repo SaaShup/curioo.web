@@ -72,19 +72,19 @@ Pay attention to the coordinates shown on the card — they might help you upgra
 
 <div class="row mb-3 mx-2">
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/1-min.png" width="32px"/> <span style="font-weight: bold;color:#942222;">Monument</span>
+      <img src="https://api.curioo.city/images/1/1-min.png" width="32px"/> <span style="font-weight: bold;color:#942222;">Monument</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/2-min.png" width="32px"/> <span style="font-weight: bold;color:#4F7942;">Nature</span>
+      <img src="https://api.curioo.city/images/2/2-min.png" width="32px"/> <span style="font-weight: bold;color:#4F7942;">Nature</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/4-min.png" width="32px"/> <span style="font-weight: bold;color:#0F52BA;">Place</span>
+      <img src="https://api.curioo.city/images/4/4-min.png" width="32px"/> <span style="font-weight: bold;color:#0F52BA;">Place</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/6-min.png" width="32px"/> <span style="font-weight: bold;color:grey">Worship</span>
+      <img src="https://api.curioo.city/images/6/6-min.png" width="32px"/> <span style="font-weight: bold;color:grey">Worship</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/22-min.png" width="32px"/> <span style="font-weight: bold;color:purple">Event</span>
+      <img src="https://api.curioo.city/images/22/22-min.png" width="32px"/> <span style="font-weight: bold;color:purple">Event</span>
    </div>
 </div> 
 
@@ -155,13 +155,13 @@ The most common one is the daily 🧰 chest, which appears once a day and allows
 
 <div class="row mb-3 mx-2 text-center">
    <div class="col-4 p-1">
-      <img src="/images/cards/2025/19-min.png" width="96px"/>
+      <img src="https://api.curioo.city/images/19/19-min.png" width="96px"/>
    </div>
    <div class="col-4 p-1">
       <span style="font-size:5rem;width:100%;text-align:center;">🔀</span>
    </div>
    <div class="col-4 p-1">
-      <img src="/images/cards/2025/19-min-gold.png" width="96px"/>
+      <img src="/images/19-min-gold.png" width="96px"/>
    </div>
 </div>
 
