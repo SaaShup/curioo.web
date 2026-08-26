@@ -69,19 +69,19 @@ Votre mission, si vous l'acceptez, est simple :
 
 <div class="row mb-3 mx-2">
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/1-min.png" width="32px"/> <span style="font-weight: bold;color:#942222;">Monument</span>
+      <img src="https://api.curioo.city/images/1/1-min.png" width="32px"/> <span style="font-weight: bold;color:#942222;">Monument</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/2-min.png" width="32px"/> <span style="font-weight: bold;color:#4F7942;">Nature</span>
+      <img src="https://api.curioo.city/images/2/2-min.png" width="32px"/> <span style="font-weight: bold;color:#4F7942;">Nature</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/4-min.png" width="32px"/> <span style="font-weight: bold;color:#0F52BA;">Lieu</span>
+      <img src="https://api.curioo.city/images/4/4-min.png" width="32px"/> <span style="font-weight: bold;color:#0F52BA;">Lieu</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/6-min.png" width="32px"/> <span style="font-weight: bold;color:grey">Culte</span>
+      <img src="https://api.curioo.city/images/6/6-min.png" width="32px"/> <span style="font-weight: bold;color:grey">Culte</span>
    </div>
    <div class="col-6 p-1">
-      <img src="/images/cards/2025/22-min.png" width="32px"/> <span style="font-weight: bold;color:purple">Evenement</span>
+      <img src="https://api.curioo.city/images/22/22-min.png" width="32px"/> <span style="font-weight: bold;color:purple">Evenement</span>
    </div>
 </div> 
 
@@ -153,13 +153,13 @@ La plus courrante est le coffre 🧰 journalier qui apparait une fois par jour e
 
 <div class="row mb-3 mx-2 text-center">
    <div class="col-4 p-1">
-      <img src="/images/cards/2025/19-min.png" width="96px"/>
+      <img src="https://api.curioo.city/images/19/19-min.png" width="96px"/>
    </div>
    <div class="col-4 p-1">
    <span style="font-size:5rem;width:100%;text-align:center;">🔀</span>
    </div>
    <div class="col-4 p-1">
-      <img src="/images/cards/2025/19-min-gold.png" width="96px"/>
+      <img src="/images/19-min-gold.png" width="96px"/>
    </div>
 </div>
 

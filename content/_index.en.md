@@ -21,8 +21,8 @@ img {
 <span style="color: white;">You explore, you guide.<span>
 
 <ul class="nav nav-pills justify-content-center">
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< ref "explore" >}}">🗺 Explore</a></li>
-    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< ref "guide" >}}">🌍 Guide</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< relref "explore" >}}">🗺 Explore</a></li>
+    <li class="nav-item nav-link"><a class="btn btn-dark btn-lg" href="{{< relref "guide" >}}">🌍 Guide</a></li>
 </ul>
 
 </div>

@@ -34,14 +34,34 @@
 <div id="cards">
 </div>
 
+<style>
+    @keyframes cards-loading-pulse {
+        0%, 100% { opacity: 0.45; }
+        50% { opacity: 0.9; }
+    }
+    @keyframes cards-loading-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+
 <script>
     var cards = {};
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modal-image");
 
+    function showLoading() {
+        document.getElementById("cards").innerHTML =
+            '<div class="container my-5 py-4 text-center" style="animation: cards-loading-pulse 2s ease-in-out infinite;">' +
+            '<img src="/images/logo.png" alt="Chargement" style="width: 48px; animation: cards-loading-spin 1.5s linear infinite;"/>' +
+            '<p class="text-muted mt-3 mb-0" style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem;">Chargement…</p>' +
+            '</div>';
+    }
+
     async function loadCards() {
         let country = document.getElementById("country-select").value;
         let type = document.getElementById("type-select").value;
+        showLoading();
         const response = await fetch("https://api.curioo.city/api/cards/");
         cards = await response.json();
         let row = '<div class="container mt-3 mb-5"><div class="row">';
@@ -49,12 +69,14 @@
         for (var card of cards.cards) {
             if (country.toLowerCase() != card.country.toLowerCase()) continue;
             if (type.toLowerCase() != card.type.toLowerCase() && type != "") continue;
-            row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + card.card_id + '" src="/images/cards/' + card.card_id +
+            row += '<div class="col-lg-3 col-sm-6"><img class="img" id="card' + card.card_id + '" src="https://api.curioo.city/images/' + card.card_id + '/' + card.card_id +
                 '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
         }
         row += '</div></div>';
         document.getElementById("cards").innerHTML = row;
     }
+
+    showLoading();
 
     window.onload = async function () {
         loadCards();
