@@ -1,6 +1,6 @@
-<div class="row p-3 pb-5" style="background-color: black;margin: 0px;">
+<div class="py-3 pb-5" style="background-color: black;">
     <div class="container">
-        <div class="row mx-5">
+        <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
                 <label class="text-white fw-bold mb-3 h4">🗺 Pays: </label>
                 <select class="form-select" name="country" id="country-select" onchange="loadCards();">

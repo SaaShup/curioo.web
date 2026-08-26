@@ -1,6 +1,6 @@
-<div class="row" style="background-color: black;padding:50px;">
+<div style="background-color: black;padding:50px 0;">
 <div class="container">
-<div class="row mx-5">
+<div class="row">
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🗺 Country: </label>
         <select class="form-select" name="country" id="country-select" onchange="loadCards();">
