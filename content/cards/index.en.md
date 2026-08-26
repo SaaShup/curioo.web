@@ -58,14 +58,16 @@
             '</div>';
     }
 
+    var loadSeq = 0;
+
     async function loadCards() {
+        const seq = ++loadSeq;
         let country = document.getElementById("country-select").value;
         let type = document.getElementById("type-select").value;
         showLoading();
         const response = await fetch("https://api.curioo.city/api/cards/");
         cards = await response.json();
         let row = '<div class="container mt-3 mb-5"><div class="row">';
-        row += '<div class="container mt-3 mb-5"><div class="row">';
         for (var card of cards.cards) {
             if (country.toLowerCase() != card.country.toLowerCase()) continue;
             if (type.toLowerCase() != card.type.toLowerCase() && type != "") continue;
@@ -73,7 +75,19 @@
                 '-min.png" width="100%" style="padding-top: 25px;" onclick="modalImg.src = this.src; modal.style.display = \'block\';"/></div>';
         }
         row += '</div></div>';
-        document.getElementById("cards").innerHTML = row;
+        const grid = document.createElement('div');
+        grid.innerHTML = row;
+        await Promise.all(Array.from(grid.querySelectorAll('img')).map(function (img) {
+            return new Promise(function (resolve) {
+                if (img.complete) return resolve();
+                img.addEventListener('load', resolve);
+                img.addEventListener('error', resolve);
+            });
+        }));
+        if (seq !== loadSeq) return;
+        const container = document.getElementById("cards");
+        container.innerHTML = "";
+        container.appendChild(grid);
     }
 
     showLoading();
