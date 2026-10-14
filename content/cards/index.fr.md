@@ -4,24 +4,13 @@
             <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
                 <label class="text-white fw-bold mb-3 h4">🗺 Pays: </label>
                 <select class="form-select" name="country" id="country-select" onchange="loadCards();">
-                    <option value="france">France</option>
-                    <option value="luxembourg">Luxembourg</option>
-                    <option value="suisse">Suisse</option>
-                    <option value="belgique">Belgique</option>
-                    <option value="irlande">Irlande</option>
-                    <option value="portugal">Portugal</option>
                 </select>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
                 <label class="text-white fw-bold mb-3 h4">🧾 Type: </label>
                 <select class="form-select" name="type" id="type-select" onchange="loadCards();">
                     <option value="">---</option>
-                    <option value="Nature">Nature</option>
-                    <option value="Monument">Monument</option>
-                    <option value="Culte">Culte</option>
-                    <option value="Evenement">Evenement</option>
-                    <option value="Lieu">Lieu</option>
-                </select>
+        </select>
             </div>
         </div>
     </div>
@@ -58,15 +47,48 @@
             '</div>';
     }
 
+    var countryNames = {
+        "საქართველო": "Géorgie"
+    };
+
+    function fillCountries() {
+        const select = document.getElementById("country-select");
+        const countries = [...new Set(cards.cards.map(function (card) { return card.country; }))];
+        select.innerHTML = "";
+        countries.forEach(function (c) {
+            const option = document.createElement("option");
+            option.value = c.toLowerCase();
+            option.textContent = countryNames[c.toLowerCase()] || c;
+            select.appendChild(option);
+        });
+    }
+
+    function fillTypes() {
+        const select = document.getElementById("type-select");
+        const types = [...new Set(cards.cards.map(function (card) { return card.type; }))].filter(Boolean);
+        types.forEach(function (t) {
+            const option = document.createElement("option");
+            option.value = t;
+            option.textContent = t;
+            select.appendChild(option);
+        });
+    }
+
     var loadSeq = 0;
 
     async function loadCards() {
         const seq = ++loadSeq;
-        let country = document.getElementById("country-select").value;
-        let type = document.getElementById("type-select").value;
+        let country;
+        let type;
         showLoading();
-        const response = await fetch("https://api.curioo.city/api/cards/");
-        cards = await response.json();
+        if (!cards.cards) {
+            const response = await fetch("https://api.curioo.city/api/cards/");
+            cards = await response.json();
+            fillCountries();
+            fillTypes();
+        }
+        country = document.getElementById("country-select").value;
+        type = document.getElementById("type-select").value;
         let row = '<div class="container mt-3 mb-5"><div class="row">';
         for (var card of cards.cards) {
             if (country.toLowerCase() != card.country.toLowerCase()) continue;
