@@ -14,12 +14,12 @@ title = 'Collection des cartes'
                     <option value="belgique">Belgique</option>
                     <option value="irlande">Irlande</option>
                     <option value="portugal">Portugal</option>
-                    <option value="españa">España</option>
-                    <option value="nederland">Nederland</option>
+                    <option value="españa">Espagne</option>
+                    <option value="nederland">Pays-Bas</option>
                     <option value="danemark">Danemark</option>
-                    <option value="hrvatska">Hrvatska</option>
-                    <option value="crna gora">Crna Gora</option>
-                    <option value="საქართველო">საქართველო</option>
+                    <option value="hrvatska">Croatie</option>
+                    <option value="crna gora">Monténégro</option>
+                    <option value="საქართველო">Géorgie</option>
                 </select>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
