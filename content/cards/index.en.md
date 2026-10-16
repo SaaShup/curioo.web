@@ -1,15 +1,36 @@
++++
+title = 'Cards collection'
++++
+
 <div style="background-color: black;padding:50px 0;">
 <div class="container">
 <div class="row">
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🗺 Country: </label>
         <select class="form-select" name="country" id="country-select" onchange="loadCards();">
+            <option value="france">France</option>
+            <option value="luxembourg">Luxemburg</option>
+            <option value="suisse">Switzerland</option>
+            <option value="belgique">Belgium</option>
+            <option value="irlande">Ireland</option>
+            <option value="portugal">Portugal</option>
+            <option value="españa">España</option>
+            <option value="nederland">Nederland</option>
+            <option value="danemark">Danemark</option>
+            <option value="hrvatska">Hrvatska</option>
+            <option value="crna gora">Crna Gora</option>
+            <option value="საქართველო">საქართველო</option>
         </select>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
         <label class="text-white fw-bold mb-3 h4">🧾 Type: </label>
         <select class="form-select" name="type" id="type-select" onchange="loadCards();">
             <option value="">---</option>
+            <option value="Nature">Nature</option>
+            <option value="Monument">Monument</option>
+            <option value="Culte">Cult</option>
+            <option value="Evenement">Event</option>
+            <option value="Lieu">Place</option>
         </select>
     </div>
 </div>
@@ -47,53 +68,15 @@
             '</div>';
     }
 
-    var countryNames = {
-        france: "France", luxembourg: "Luxemburg", suisse: "Switzerland",
-        belgique: "Belgium", irlande: "Ireland", portugal: "Portugal", "საქართველო": "Georgia"
-    };
-
-    function fillCountries() {
-        const select = document.getElementById("country-select");
-        const countries = [...new Set(cards.cards.map(function (card) { return card.country; }))];
-        select.innerHTML = "";
-        countries.forEach(function (c) {
-            const option = document.createElement("option");
-            option.value = c.toLowerCase();
-            option.textContent = countryNames[c.toLowerCase()] || c;
-            select.appendChild(option);
-        });
-    }
-
-    var typeNames = {
-        culte: "Cult", evenement: "Event", lieu: "Place"
-    };
-
-    function fillTypes() {
-        const select = document.getElementById("type-select");
-        const types = [...new Set(cards.cards.map(function (card) { return card.type; }))].filter(Boolean);
-        types.forEach(function (t) {
-            const option = document.createElement("option");
-            option.value = t;
-            option.textContent = typeNames[t.toLowerCase()] || t;
-            select.appendChild(option);
-        });
-    }
-
     var loadSeq = 0;
 
     async function loadCards() {
         const seq = ++loadSeq;
-        let country;
-        let type;
+        let country = document.getElementById("country-select").value;
+        let type = document.getElementById("type-select").value;
         showLoading();
-        if (!cards.cards) {
-            const response = await fetch("https://api.curioo.city/api/cards/");
-            cards = await response.json();
-            fillCountries();
-            fillTypes();
-        }
-        country = document.getElementById("country-select").value;
-        type = document.getElementById("type-select").value;
+        const response = await fetch("https://api.curioo.city/api/cards/");
+        cards = await response.json();
         let row = '<div class="container mt-3 mb-5"><div class="row">';
         for (var card of cards.cards) {
             if (country.toLowerCase() != card.country.toLowerCase()) continue;
