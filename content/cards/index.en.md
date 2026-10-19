@@ -1,3 +1,7 @@
++++
+title = 'Cards collection'
++++
+
 <div style="background-color: black;padding:50px 0;">
 <div class="container">
 <div class="row">
@@ -10,6 +14,12 @@
             <option value="belgique">Belgium</option>
             <option value="irlande">Ireland</option>
             <option value="portugal">Portugal</option>
+            <option value="españa">Spain</option>
+            <option value="nederland">Netherlands</option>
+            <option value="danemark">Denmark</option>
+            <option value="hrvatska">Croatia</option>
+            <option value="crna gora">Montenegro</option>
+            <option value="საქართველო">Georgia</option>
         </select>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
